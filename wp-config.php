@@ -16,16 +16,16 @@
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('DB_NAME', 'phillypodiatrist-phpfogapp-com');
+define('DB_NAME', 'xohealth');
 
 /** MySQL database username */
-define('DB_USER', 'admin-16721');
+define('DB_USER', 'root');
 
 /** MySQL database password */
-define('DB_PASSWORD', 'philly!@qw');
+define('DB_PASSWORD', '123');
 
 /** MySQL hostname */
-define('DB_HOST', 'db01-share');
+define('DB_HOST', 'localhost');
 
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8');
@@ -42,14 +42,14 @@ define('DB_COLLATE', '');
  *
  * @since 2.6.0
  */
-define('AUTH_KEY',         '0.308868939801505');
-define('SECURE_AUTH_KEY',  '0.308868939801505');
-define('LOGGED_IN_KEY',    '0.308868939801505');
-define('NONCE_KEY',        '0.308868939801505');
-define('AUTH_SALT',        '0.308868939801505');
-define('SECURE_AUTH_SALT', '0.308868939801505');
-define('LOGGED_IN_SALT',   '0.308868939801505');
-define('NONCE_SALT',       '0.308868939801505');
+define('AUTH_KEY',         'xohealthauthkey');
+define('SECURE_AUTH_KEY',  'xohealthsecureauthkey');
+define('LOGGED_IN_KEY',    'xohealthloggedinkey');
+define('NONCE_KEY',        'xohealthnoncekey');
+define('AUTH_SALT',        'xohealthauthsalt');
+define('SECURE_AUTH_SALT', 'xohealthsecureauthsalt');
+define('LOGGED_IN_SALT',   'xohealthloggedinsalt');
+define('NONCE_SALT',       'xohealthnoncesalt');
 
 /**#@-*/
 
@@ -85,9 +85,6 @@ define('WP_DEBUG', false);
 /** Absolute path to the WordPress directory. */
 if ( !defined('ABSPATH') )
 	define('ABSPATH', dirname(__FILE__) . '/');
-
-/* PHPFOG edit to patch a few issues of file saves, plugins, etc. */
-define('FS_METHOD', 'direct');
 
 /** Sets up WordPress vars and included files. */
 require_once(ABSPATH . 'wp-settings.php');

@@ -51,7 +51,7 @@ add_theme_support( 'automatic-feed-links' );
  * Add Post Format support
  */
 add_theme_support( 'post-formats', array( 'aside', 'gallery', 'quote', 'status' ) );
-
+add_editor_style( 'editor-style.css' );
 /**
  * Get our wp_nav_menu() fallback, wp_page_menu(), to show a home link.
  */
@@ -60,7 +60,20 @@ function beach_page_menu_args($args) {
 	return $args;
 }
 add_filter( 'wp_page_menu_args', 'beach_page_menu_args' );
-
+add_filter( 'default_content', 'custom_editor_content' );
+function custom_editor_content( $content ) {
+   $content = '
+      <div class="content-col-main">
+      This is your main page content
+      &nbsp;
+      </div>
+      <div class="content-col-side">
+      This is your sidebar content
+       &nbsp;
+      </div>    
+   ';
+   return $content;
+}
 /**
  * Register widgetized area and update sidebar with default widgets
  */

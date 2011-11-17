@@ -32,7 +32,7 @@ get_header(); ?>
 				
 				<?php /* Loop of posts with category index-3-pieces */
 				 global $post;
-				 $arg = array('category' => 3, 'numberposts' => 3);
+				 $arg = array('category' => 3, 'numberposts' => 3, 'orderby'=> 'post_date', 'order'=>'ASC');
 				 $myposts = get_posts($arg); 
 				 /* Layout of 3 pieces */
 				 foreach ($myposts as $post):

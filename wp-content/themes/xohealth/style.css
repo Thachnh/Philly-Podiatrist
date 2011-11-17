@@ -1076,11 +1076,12 @@ li.bypostauthor > article footer a:active {
 	margin-left: 10px;
 	color: #EEE;
 	padding: 10px;
-	padding-left: 20px;
+	padding-left: 10px;
 	border-left: 1px dotted #EEE;
 }
 .index-block:first-child {
 	border-left: 0px;
+	margin-left: 0px;
 }
 #content.index-content {	 
   background: url("images/black-trans-25.png");

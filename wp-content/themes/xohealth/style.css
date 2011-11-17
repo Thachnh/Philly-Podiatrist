@@ -91,7 +91,10 @@ a img {
 	width: 80%;
 	display: block;
 	margin: 0 auto;
-	background: url("images/white-trans-25.png");
+	background: url("images/white-trans-50.png");
+	-moz-box-shadow: 0 0 17px #555;
+	-webkit-box-shadow: 0 0 17px#555;
+	box-shadow: 0 0 17px #555;
 }
 /*
 hgroup[role="banner"],
@@ -522,7 +525,7 @@ img#wpstats,
 #content {
 	background: url("images/white-trans-10.png");
 	overflow: hidden;
-	padding: 25px 0 0;
+	padding: 25px 0 25px;
 }
 .page-title {
 	background: url("images/white-trans-50.png");
@@ -1067,6 +1070,12 @@ li.bypostauthor > article footer a:active {
 	width: 30%;
 	margin-left: 10px;
 	color: #EEE;
+	padding: 10px;
+	padding-left: 20px;
+	border-left: 1px dotted #EEE;
+}
+.index-block:first-child {
+	border-left: 0px;
 }
 #content.index-content {	 
   background: url("images/black-trans-25.png");

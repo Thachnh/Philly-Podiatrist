@@ -20,7 +20,7 @@ get_header(); ?>
         </div>
 	</div>
 		<div id="primary">
-			<div id="content" role="main">
+			<div id="content" role="main" class="index-content">
 
 				<?php beach_content_nav( 'nav-above' ); ?>
 
@@ -34,14 +34,15 @@ get_header(); ?>
 				<?php /* Loop of posts with category index-3-pieces */
 				 global $post;
 				 $arg = array('category' => 3, 'numberposts' => 3);
-				 $myposts = get_posts($arg);
-				 
+				 $myposts = get_posts($arg); 
 				 /* Layout of 3 pieces */
 				 foreach ($myposts as $post):
 				 	setup_postdata($post);
-				 	?><li><?php
-				 	the_content();
-				 	?></li><?php
+				 	?>
+				 	<div class="index-block">
+				 	<?php the_content(); ?>
+				 	</div>	
+				 	<?php
 				 endforeach;				 
 				 
 				?>
@@ -50,7 +51,7 @@ get_header(); ?>
 
 			</div><!-- #content -->
 
-			<?php //get_sidebar(); ?>
+			<?php get_sidebar(); ?>
 		</div><!-- #primary -->
 
 <?php get_footer(); ?>

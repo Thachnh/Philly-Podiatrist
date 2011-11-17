@@ -18,6 +18,6 @@
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
-
+</div> <!-- End realbody div -->
 </body>
 </html>

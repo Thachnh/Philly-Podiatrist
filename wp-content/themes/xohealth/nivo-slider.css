@@ -17,8 +17,8 @@
 }
 .theme-default #slider {
     margin:0 auto;
-    width:618px; /* Make sure your images are the same size */
-    height:246px; /* Make sure your images are the same size */
+    height:406px; /* Make sure your images are the same size */
+    width: 100%;
 }
 .nivoSlider {
 	position:relative;
@@ -27,6 +27,8 @@
 	position:absolute;
 	top:0px;
 	left:0px;
+	max-height: 406px;
+	width: 100%;
 }
 /* If an image is wrapped in a link */
 .nivoSlider a.nivo-imageLink {

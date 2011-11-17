@@ -45,13 +45,18 @@ fieldset, form, label, legend {
 :focus {
 	outline: 0;
 }
+#bgimg {
+	position:absolute;
+	z-index: -1;
+}
 body {
 	line-height: 1;
 	//background: #082233 url("images/bkg.jpg") repeat-x 60% 100%;
-	background-image:url('images/bkg.jpg');
+	background-image:url('images/bkg1.jpg');
 	background-repeat:no-repeat;
 	background-attachment:fixed;
 	background-position:center top; 
+	height:100%;width:100%;
 }
 ol, ul {
 	list-style: none;

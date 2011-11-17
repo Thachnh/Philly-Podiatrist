@@ -50,13 +50,22 @@ fieldset, form, label, legend {
 	z-index: -1;
 }
 body {
+	overflow:hidden; 		/* needed to eliminate scrollbars caused by the background image */
+	padding:0;margin:0;		/* necesarry for the raster to fill the screen */
+	height:100%;width:100%;
+}
+#realBody {
+	position:absolute;
+	z-index: 5;				/* Place the new body above the background image */
+	overflow:auto; 			/* restore scrollbars for the content */
+	height:100%;width:100%;	/* Make the new body fill the screen */
 	line-height: 1;
 	//background: #082233 url("images/bkg.jpg") repeat-x 60% 100%;
-	background-image:url('images/bkg1.jpg');
+	/*background-image:url('images/bkg1.jpg');
 	background-repeat:no-repeat;
 	background-attachment:fixed;
 	background-position:center top; 
-	height:100%;width:100%;
+	height:100%;width:100%;*/
 }
 ol, ul {
 	list-style: none;

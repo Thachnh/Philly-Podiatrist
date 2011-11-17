@@ -43,8 +43,13 @@
   <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
   <script src="<?php echo get_template_directory_uri(); ?>/jquery.nivo.slider.pack.js" type="text/javascript"></script>
   <script src="<?php echo get_template_directory_uri(); ?>/jquery.fullscreenr.js" type="text/javascript"></script>
+	<script type="text/javascript">  
+		var FullscreenrOptions = { width: 1599, height: 1060, bgID: '#bgimg' };
+		jQuery.fn.fullscreenr(FullscreenrOptions);
+	</script>
 <?php wp_head(); ?>
 	<script>
+	
 	  $(document).ready(function() {
 		    $("#accordion").accordion();
 		  });
@@ -54,7 +59,9 @@
 	</script>
 </head>
 
-<body <?php body_class(); ?>>
+<body>
+<img id="bgimg" src="<?php echo get_template_directory_uri(); ?>/images/bkg1.jpg" />
+<div id="realBody" <?php body_class(); ?>>
 <div id="page" class="hfeed">
 	<header id="branding">
 			<hgroup role="banner" class="left">

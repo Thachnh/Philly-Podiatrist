@@ -5,6 +5,7 @@
  */
 
 get_header(); ?>
+<?php //Slide   ?>
 	<div id="wrapper">
 	<div class="slider-wrapper theme-default">
             <div id="slider" class="nivoSlider">
@@ -29,6 +30,21 @@ get_header(); ?>
 					<?php get_template_part( 'content', get_post_format() ); ?>
 
 				<?php endwhile;*/ ?>
+				
+				<?php /* Loop of posts with category index-3-pieces */
+				 global $post;
+				 $arg = array('category' => 3, 'numberposts' => 3);
+				 $myposts = get_posts($arg);
+				 
+				 /* Layout of 3 pieces */
+				 foreach ($myposts as $post):
+				 	setup_postdata($post);
+				 	?><li><?php
+				 	the_content();
+				 	?></li><?php
+				 endforeach;				 
+				 
+				?>
 
 			<?php beach_content_nav( 'nav-below' ); ?>
 

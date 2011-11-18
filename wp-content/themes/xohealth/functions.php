@@ -12,6 +12,9 @@
  */
 load_theme_textdomain( 'beach', get_template_directory() . '/languages' );
 
+//if ( function_exists('register_sidebar') ) register_sidebar(array( 'name' => 'wp_youtubenails', 'before_widget' => '', 'after_widget' => '', 'before_title' => '', 'after_title' => '', ));
+If ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('wp_youtubenails')) : endif;
+
 $locale = get_locale();
 $locale_file = get_template_directory() . "/languages/$locale.php";
 if ( is_readable( $locale_file ) )
@@ -109,7 +112,7 @@ function beach_content_nav($nav_id) {
  * Returns a "Continue Reading" link for excerpts
  */
 function beach_continue_reading_link() {
-	return ' <a href="'. get_permalink() . '">' . __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'beach' ) . '</a>';
+	return ' <br/><a rel="'. get_permalink() .'" href="'. get_permalink() . '" class="right">' . __( 'Expand', 'beach' ) . '</a>';
 }
 
 /**

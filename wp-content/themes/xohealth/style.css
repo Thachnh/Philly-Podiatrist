@@ -24,6 +24,10 @@ Tags: blue, green, two-columns, fixed-width, custom-menu, full-width-template, m
 	float: right;
 }
 
+.nondisplay {
+	display: none;
+}
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, cite, code,
@@ -90,13 +94,6 @@ a img {
 	border: 0;
 }
 
-.left {
-	float: left;
-}
-.right {
-	float: right;
-}
-
 
 /* =Structure
 ----------------------------------------------- */
@@ -111,12 +108,27 @@ a img {
 	box-shadow: 0 0 17px #555;
 }
 
+#content.subpages {
+	background: none;
+	padding: 0px;
+}
+
 .subpage {
-	background: url("images/black-trans-50.png");
-	color: #eee;
-	margin: 10px;
-	padding: 5px;
-	border-radius: 3px;
+	background: url("images/blue-trans-75.png");
+	color: #222222;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	padding: 10px;
+	border-radius: 4px;
+	float: left;
+	width: 45%;
+	box-shadow: 0px 0px 5px #555;
+	border: 1px solid transparent;
+}
+
+.subpage:hover {
+	border: 1px solid #444;
+	cursor: pointer;
 }
 
 .subpage-title {
@@ -1109,7 +1121,7 @@ li.bypostauthor > article footer a:active {
 	margin-left: 0px;
 }
 #content.index-content {	 
-  background: url("images/black-trans-25.png");
+  background: url("images/black-trans-50.png");
 }
 .widget {
 	background: url("images/black-trans-25.png");

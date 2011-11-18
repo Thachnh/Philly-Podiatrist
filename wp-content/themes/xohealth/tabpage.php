@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Tabpage
+Template Name: Practicepage
  */
 /**
  * @package WordPress
@@ -12,26 +12,16 @@ get_header(); ?>
 		<div id="primary">
 			<div id="content" role="main">
 
-				<?php /* while ( have_posts() ) : the_post(); ?>
-
-					<?php get_template_part( 'content', 'page' ); ?>
-
-					<?php comments_template( '', true ); ?>
-
-				<?php endwhile; // end of the loop. */ 
+				<?php
 				$posts = get_posts(array('cat'=>4));
 				foreach ($posts as $post):
 					setup_postdata($post);
-					?><a id="tab-<?php echo get_the_ID(); ?>" href="#" class="page_tab"><?php
+					?><div id="page-<?php echo get_the_ID(); ?>" class="subpage"><div class="subpage-title"><?php
 					the_title();
-					?></a>&nbsp;<?php
-				endforeach;
-				foreach ($posts as $post):
-					setup_postdata($post);
-					?><div id="page-<?php echo get_the_ID(); ?>" href="#" class="page_page"><?php
-					the_content();
 					?></div><?php
-				endforeach; 
+					the_excerpt();
+					?></div>&nbsp;<?php
+				endforeach;
 				?>
 				<script>
 					$(".page_page").hide();

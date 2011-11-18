@@ -59,7 +59,7 @@ body {
 	z-index: 5;				/* Place the new body above the background image */
 	overflow:auto; 			/* restore scrollbars for the content */
 	height:100%;width:100%;	/* Make the new body fill the screen */
-	line-height: 1;
+	line-height: 1.7;
 	//background: #082233 url("images/bkg.jpg") repeat-x 60% 100%;
 	/*background-image:url('images/bkg1.jpg');
 	background-repeat:no-repeat;
@@ -174,7 +174,8 @@ hgroup[role="banner"] {
 
 body, input, textarea {
 	color: #333;
-	font: 12px "Fertigo Pro", "fertigo-pro-1", "fertigo-pro-2", Georgia, "Bitstream Charter", serif;
+	/*font: 12px "Fertigo Pro", "fertigo-pro-1", "fertigo-pro-2", Georgia, "Bitstream Charter", serif;*/
+	font: 0.87em arial,verdana,helvetica,sans-serif;
 	line-height: 1.5;
 }
 

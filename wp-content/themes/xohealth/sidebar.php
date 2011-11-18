@@ -30,11 +30,6 @@
 						<li>List item three</li>
 					</ul>
 				</div>
-					<ul>
-						<?php wp_register(); ?>
-						<aside><?php wp_loginout(); ?></aside>
-						<?php wp_meta(); ?>
-					</ul>
 			</div>
 
 		</div><!-- #secondary .widget-area -->

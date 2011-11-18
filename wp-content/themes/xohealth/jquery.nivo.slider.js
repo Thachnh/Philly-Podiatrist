@@ -670,7 +670,7 @@
 		keyboardNav: true,
 		pauseOnHover: true,
 		manualAdvance: false,
-		captionOpacity: 0.8,
+		captionOpacity: 0.5,
 		prevText: 'Prev',
 		nextText: 'Next',
 		beforeChange: function(){},

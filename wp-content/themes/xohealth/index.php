@@ -9,12 +9,12 @@ get_header(); ?>
 	<div id="wrapper">
 	<div class="slider-wrapper theme-default">
             <div id="slider" class="nivoSlider">
-                <img src="<?php bloginfo('template_directory') ?>/images/slide-1.jpg" height="446" alt="" title="The Center for Enhanced Podiatric Function and Pain Management"/>
-                <img src="<?php bloginfo('template_directory') ?>/images/slide-2.jpg" alt="" title="My goal is to determine & treat the CAUSE of your pain" /></a>
-                <img src="<?php bloginfo('template_directory') ?>/images/slide-3.jpg" title="Patients of all ages welcomed" />
-                <img src="<?php bloginfo('template_directory') ?>/images/slide-4.jpg" alt="" title="We treat “the cause of your condition”" />
-                <img src="<?php bloginfo('template_directory') ?>/images/slide-5.jpg" alt="" title="Non-surgical treatment techniques emphasized" />
-                <img src="<?php bloginfo('template_directory') ?>/images/slide-6.jpg" alt="" title="Specialize in sports injuries and work-related accidents" />
+                <img src="<?php bloginfo('template_directory') ?>/images/slide-1.jpg" class="image" alt="" title="The Center for Enhanced Podiatric Function and Pain Management"/>
+                <img src="<?php bloginfo('template_directory') ?>/images/slide-2.jpg" class="image" alt="" title="My goal is to determine & treat the CAUSE of your pain" /></a>
+                <img src="<?php bloginfo('template_directory') ?>/images/slide-3.jpg" class="image" title="Patients of all ages welcomed" />
+                <img src="<?php bloginfo('template_directory') ?>/images/slide-4.jpg" class="image" alt="" title="We treat “the cause of your condition”" />
+                <img src="<?php bloginfo('template_directory') ?>/images/slide-5.jpg" class="image" alt="" title="Non-surgical treatment techniques emphasized" />
+                <img src="<?php bloginfo('template_directory') ?>/images/slide-6.jpg" class="image" alt="" title="Specialize in sports injuries and work-related accidents" />
             </div>
         </div>
 	</div>

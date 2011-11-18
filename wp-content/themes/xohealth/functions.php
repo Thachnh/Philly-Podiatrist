@@ -109,7 +109,7 @@ function beach_content_nav($nav_id) {
  * Returns a "Continue Reading" link for excerpts
  */
 function beach_continue_reading_link() {
-	return ' <a href="'. get_permalink() . '">' . __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'beach' ) . '</a>';
+	return ' <br/><a rel="'. get_permalink() .'" href="'. get_permalink() . '" class="right">' . __( 'Expand', 'beach' ) . '</a>';
 }
 
 /**

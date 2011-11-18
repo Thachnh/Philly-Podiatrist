@@ -1099,10 +1099,9 @@ li.bypostauthor > article footer a:active {
 .index-block {
 	float: left;
 	width: 30%;
-	margin-left: 10px;
+	margin-left: 1%;
 	color: #EEE;
-	padding: 10px;
-	padding-left: 10px;
+	padding: 1%;
 	border-left: 1px dotted #EEE;
 }
 .index-block:first-child {

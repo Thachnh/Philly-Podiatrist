@@ -20,6 +20,7 @@ Author URI: http://dev7studios.com
 	top:0px;
 	left:0px;
 	display:none;
+	max-height: 306px;
 }
 .theme-default .nivoSlider a {
 	border:0;

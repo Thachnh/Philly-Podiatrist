@@ -64,7 +64,7 @@ body {
 	overflow:auto; 			/* restore scrollbars for the content */
 	height:100%;width:100%;	/* Make the new body fill the screen */
 	line-height: 1.7;
-	//background: #082233 url("images/bkg.jpg") repeat-x 60% 100%;
+	background: #082233 url("images/bkg2.jpg") repeat-x 0 0;
 	/*background-image:url('images/bkg1.jpg');
 	background-repeat:no-repeat;
 	background-attachment:fixed;

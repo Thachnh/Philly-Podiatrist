@@ -60,7 +60,7 @@
 </head>
 
 <body>
-<img id="bgimg" src="<?php echo get_template_directory_uri(); ?>/images/bkg1.jpg" />
+<!-- <img id="bgimg" src="<?php echo get_template_directory_uri(); ?>/images/bkg1.jpg" /> -->
 <div id="realBody" <?php body_class(); ?>>
 <div id="page" class="hfeed">
 	<header id="branding">

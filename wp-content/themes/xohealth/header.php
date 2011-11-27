@@ -36,6 +36,8 @@
 <link rel="stylesheet" type="text/css" media="all" href="<?php echo get_template_directory_uri(); ?>/nivo-slider-theme.css" />
 <?php if ( is_singular() && get_option( 'thread_comments' ) ) wp_enqueue_script( 'comment-reply' ); ?>
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
+<link href="http://fonts.googleapis.com/css?family=Oswald" rel="stylesheet" type="text/css">
+
 <!--[if lt IE 9]>
 <script src="<?php echo get_template_directory_uri(); ?>/html5.js" type="text/javascript"></script>
 <![endif]-->
@@ -43,6 +45,7 @@
   <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
   <script src="<?php echo get_template_directory_uri(); ?>/jquery.nivo.slider.pack.js" type="text/javascript"></script>
   <script src="<?php echo get_template_directory_uri(); ?>/jquery.fullscreenr.js" type="text/javascript"></script>
+  
 	<script type="text/javascript">  
 		var FullscreenrOptions = { width: 2605, height: 1642, bgID: '#bgimg' };
 		jQuery.fn.fullscreenr(FullscreenrOptions);

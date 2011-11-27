@@ -17,9 +17,8 @@
 	margin: 0 30px;
 }
 .theme-default #slider {
-    margin:0 auto;
     height:306px; /* Make sure your images are the same size */
-    width: 100%;
+    width: 70%;
 }
 .nivoSlider {
 	position:relative;
@@ -59,18 +58,18 @@
 /* Caption styles */
 .nivo-caption {
 	position:absolute;
-	left:0px;
-	bottom:0px;
+	left:100%;
+	top:0px;
 	background:#000;
 	color:#fff;
 	opacity:0.5; /* Overridden by captionOpacity setting */
-	width:100%;
+	width:43%;
+	height: 100%;
 	z-index:8;
-	line-height: 3em;
+	line-height: 1.5em;
 }
 .nivo-caption p {
-	padding:5px;
-	margin:0 10px;
+	padding: 10px;
 }
 .nivo-caption a {
 	display:inline !important;

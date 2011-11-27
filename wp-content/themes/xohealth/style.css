@@ -64,7 +64,7 @@ body {
 	overflow:auto; 			/* restore scrollbars for the content */
 	height:100%;width:100%;	/* Make the new body fill the screen */
 	line-height: 1.7;
-	//background: #082233 url("images/bkg.jpg") repeat-x 60% 100%;
+	background: #082233 url("images/bkg2.jpg") repeat-x 0 0;
 	/*background-image:url('images/bkg1.jpg');
 	background-repeat:no-repeat;
 	background-attachment:fixed;
@@ -158,13 +158,54 @@ hgroup[role="banner"] {
 	//background: url("images/black-trans-25.png");
 }
 #content {
-	float: right;
-	width: 74%;
-}
-#sidebar {
 	float: left;
+	width: 47.5%;
+	margin: 5px 1%;
+	background-color: #316B93;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	box-shadow: 0px 0px 8px #000;
+	color: #fff;
+}
+#sidebar, #sidebar-right {
 	width: 25%;
-	background: url("images/black-trans-25.png");
+	margin: 5px 0;
+	background-color: #316B93;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	/*box-shadow: 0px 0px 8px #000;*/
+	border: 1px solid #6097BE;
+	color: #fff;
+}
+#sidebar .right-sidebar {
+	padding: 10px;
+}
+#sidebar .right-sidebar p {
+	padding: 0;
+	margin: 0;
+}
+#sidebar .sidebar-wrapper ul, #sidebar .right-sidebar h1 {
+	list-style: none;
+	margin: 0;
+	padding: 10px 0;
+	font-family: "Oswald", arial, helvetica, sans-serif;
+	font-size: 1.1em;
+	text-decoration: none;
+	color: #eee;
+	font-weight: bold;
+}
+#sidebar .sidebar-wrapper ul li {
+	margin: 0 10px;
+	border-bottom: 1px solid #224259;
+}
+#sidebar .sidebar-wrapper ul a {
+	text-decoration: none;
+	color: #fff;
+	display: block;
+	padding: 5px;
+}
+#sidebar .sidebar-wrapper ul a:hover {
+	background-color: #224259;
 }
 #colophon {
 	clear: both;
@@ -490,12 +531,12 @@ img#wpstats,
 /* Secondary Menu floating amongst the clouds */
 #branding .access {
 	display: block;
-	width: 420px;
-	padding: 30px;
+	width: 50%;
+	padding: 40px 30px 30px 0;
 }
 #branding .access ul {
 	float: right;
-	font-size: 15px;
+	font-size: 1.3em;
 	list-style: none;
 	margin: 0;
 	text-align: right;
@@ -503,22 +544,26 @@ img#wpstats,
 #branding .access li {
 	position: relative;
 	float: left;
+	border-left: 1px solid #aaa;
+}
+#branding .access li:first-child {
+	border: 0px;
 }
 #branding .access a {
-	background: url("images/white-trans-25.png");
-	color: #000;
+	color: #fff;
 	display: block;
-	padding: 10px 15px;
+	font-family: "Oswald", arial, helvetica, sans-serif;
+	text-shadow: #222 0px 2px 6px;
 	text-decoration: none;
-	margin: 0 0 0 20px;
+	margin: 0 10px 0 10px;
 	border-radius: 7px;
 }
 #branding .access .current_page_item a,
 #branding .access .current-menu-item a,
 #branding .access .current-menu-ancestor a {
-	background: #6b7574;
-	border-color: #636e6d;
-	color: #fff;
+	/*background: #6b7574;
+	border-color: #636e6d;*/
+	color: #eee;
 }
 #branding .access ul ul {
 	display: none;
@@ -547,9 +592,9 @@ img#wpstats,
 }
 #branding .access li:hover > a,
 #branding .access ul ul :hover > a {
-	background: #a9dbe8;
-	border-color: #9dd4e2;
-	color: #fff;
+	/*background: #a9dbe8;
+	border-color: #9dd4e2;*/
+	color: #ccc;
 }
 #branding .access ul ul a:hover {
 	background: #9dd4e2;
@@ -566,7 +611,6 @@ img#wpstats,
 	
 }
 #content {
-	background: url("images/black-trans-25.png");
 	overflow: hidden;
 	padding: 25px 0 25px;
 }

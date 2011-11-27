@@ -37,6 +37,11 @@ $themecolors = array(
 	'url' => '4499BB',
 );
 
+    function isAjax() {
+    return (isset($_SERVER['HTTP_X_REQUESTED_WITH']) &&
+    ($_SERVER['HTTP_X_REQUESTED_WITH'] == 'XMLHttpRequest'));
+    }
+
 /**
  * This theme uses wp_nav_menu() in one location.
  */

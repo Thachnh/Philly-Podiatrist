@@ -198,7 +198,7 @@ hgroup[role="banner"] {
 	font-size: 1.1em;
 	text-decoration: none;
 	color: #eee;
-	font-weight: bold;
+	font-weight: normal;
 }
 #sidebar .sidebar-wrapper ul li {
 	margin: 0 10px;

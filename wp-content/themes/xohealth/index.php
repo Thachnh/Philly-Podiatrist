@@ -22,12 +22,12 @@ get_header(); ?>
 			<?php get_sidebar(); ?>
 			<script type="text/javascript">
 				jQuery("li.menu-item-type-post_type").click(function(event) {
-					jQuery("#index-content").load(jQuery(this).children("a").attr("href")+" #content");
+					jQuery("#content-wrapper").load(jQuery(this).children("a").attr("href")+" #content");
 					event.preventDefault();
 				});
 			</script>
+			<div id="content-wrapper" class="content-wrapper">
 			<div id="content" role="main">
-			<div class="content-wrapper">
 				<?php beach_content_nav( 'nav-above' ); ?>
 
 				<?php /* Start the Loop  ?>
@@ -36,15 +36,16 @@ get_header(); ?>
 					<?php get_template_part( 'content', get_post_format() ); ?>
 
 				<?php endwhile;*/ ?>
-				<div id="index-content">
 				<?php get_a_post('welcome'); ?>
 					<div class="entry-title"><?php the_title(); ?></div>
 					<?php the_content(); ?>
+				<div id="doctor-info">
+					<?php get_a_post('doctor-information'); ?>
+						<?php the_content(); ?>
 				</div>
-				
-
-			</div><!-- .content-wrapper -->
+			<?php beach_content_nav( 'nav-below' ); ?>
 			</div><!-- #content -->
+			</div><!-- .content-wrapper -->
 			<?php include ('sidebar_right.php'); ?>
 		</div><!-- #primary -->
 

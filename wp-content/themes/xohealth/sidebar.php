@@ -30,6 +30,6 @@
 						<li>List item three</li>
 					</ul>
 				</div>
-			</div>  
+			</div>
 			<?php wp_nav_menu( array( 'container_class' => 'sidebar-wrapper', 'theme_location' => 'secondary' ) ); ?>
 		</div><!-- #secondary .widget-area -->

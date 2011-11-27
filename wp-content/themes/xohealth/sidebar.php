@@ -5,7 +5,7 @@
  */
 ?>
 		<div id="sidebar" class="widget-area" role="complementary">
-			<div id="accordion">
+			<div id="accordion" style="display: none">
 				<h1 class="widget-title"><a href="#">Section 1</a></h1>
 				<div>
 					<ul>
@@ -30,6 +30,6 @@
 						<li>List item three</li>
 					</ul>
 				</div>
-			</div>
-			<?php youtubenails_show(8,1,'',2,3,3);?>
+			</div>  
+			<?php wp_nav_menu( array( 'container_class' => 'sidebar-wrapper', 'theme_location' => 'secondary' ) ); ?>
 		</div><!-- #secondary .widget-area -->

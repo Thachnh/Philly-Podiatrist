@@ -102,7 +102,8 @@ a img {
 	width: 80%;
 	display: block;
 	margin: 0 auto;
-	background: url("images/white-trans-50.png");
+	/*background: url("images/white-trans-50.png");*/
+	background-color:rgba(10,36,53,0.2);
 	-moz-box-shadow: 0 0 17px #555;
 	-webkit-box-shadow: 0 0 17px#555;
 	box-shadow: 0 0 17px #555;
@@ -160,21 +161,23 @@ hgroup[role="banner"] {
 #content {
 	float: left;
 	width: 47.5%;
-	margin: 5px 1%;
-	background-color: #316B93;
-	-moz-border-radius: 5px;
-	border-radius: 5px;
-	box-shadow: 0px 0px 8px #000;
+	margin: 0px 1%;
 	color: #fff;
 }
+#content .content-wrapper {
+	padding: 10px;
+}
+#content .content-wrapper a {
+	color: #000;
+}
 #sidebar, #sidebar-right {
-	width: 25%;
-	margin: 5px 0;
-	background-color: #316B93;
+	width: 24%;
+	margin: 25px 5px 5px 5px;
+	/*background-color: #316B93;
 	-moz-border-radius: 5px;
-	border-radius: 5px;
-	/*box-shadow: 0px 0px 8px #000;*/
-	border: 1px solid #6097BE;
+	border-radius: 5px;*/
+	background-color: #274B65;
+	box-shadow: 0px 0px 8px #000;
 	color: #fff;
 }
 #sidebar .right-sidebar {
@@ -361,7 +364,7 @@ input[type="submit"]:active {
 
 /* Links */
 a {
-	color: #ee6633;
+	color: #eee;
 }
 a:visited {
 	color: #333;
@@ -612,7 +615,6 @@ img#wpstats,
 }
 #content {
 	overflow: hidden;
-	padding: 25px 0 25px;
 }
 .page-title {
 	background: url("images/white-trans-50.png");
@@ -630,13 +632,11 @@ img#wpstats,
 }
 .hentry,
 .error404 .post {
-	background: #f1f6f9;
 	-moz-border-radius: 3px;
 	border-radius: 3px;
 	display: block;
 	margin: 0 20px 20px;
 	overflow: hidden;
-	padding: 20px;
 }
 .entry-header {
 	display: block;
@@ -648,18 +648,17 @@ img#wpstats,
 	padding: 0;
 }
 .entry-title {
-	color: #000;
 	font-size: 22px;
 	font-weight: bold;
 }
 .single .entry-title,
-.page .entry-title {
+.page .entry-title, .entry-title {
 	border-bottom: 1px dashed #ddd;
 	font-size: 30px;
 	margin-bottom: 7px;
+	font-family: "Oswald", arial, helvetica, sans-serif;	
 }
 .entry-title a {
-	color: #000;
 	text-decoration: none;
 }
 .entry-title a:hover {
@@ -671,7 +670,6 @@ img#wpstats,
 }
 .entry-meta a {
 	border-bottom: 1px solid #ddd;
-	color: #333;
 	text-decoration: none;
 }
 .entry-meta a:focus,

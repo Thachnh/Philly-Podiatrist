@@ -46,6 +46,9 @@ get_header(); ?>
 				 endforeach;				 
 				 
 				?>
+				<?php get_a_post('welcome'); ?>
+					<div class="entry-title"><?php the_title(); ?></div>
+					<?php the_content(); ?>
 
 			<?php beach_content_nav( 'nav-below' ); ?>
 			</div><!-- .content-wrapper -->

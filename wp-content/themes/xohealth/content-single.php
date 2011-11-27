@@ -9,7 +9,7 @@
 		<header class="entry-header">
 			<h1 class="entry-title"><?php the_title(); ?></h1>
 
-			<div class="entry-meta">
+			<div class="entry-meta" style="display:none">
 				<?php
 					printf( __( '<span class="sep">Posted on </span><a href="%1$s" rel="bookmark"><time class="entry-date" datetime="%2$s" pubdate>%3$s</time></a> <span class="sep"> by </span> <span class="author vcard"><a class="url fn n" href="%4$s" title="%5$s">%6$s</a></span>', 'beach' ),
 						get_permalink(),
@@ -28,7 +28,7 @@
 			<?php wp_link_pages( array( 'before' => '<div class="page-link">' . __( 'Pages:', 'beach' ), 'after' => '</div>' ) ); ?>
 		</div><!-- .entry-content -->
 
-		<footer class="entry-meta">
+		<footer class="entry-meta" style="display:none">
 			<?php
 				$tag_list = get_the_tag_list( '', ', ' );
 				if ( '' != $tag_list ) {

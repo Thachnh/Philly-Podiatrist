@@ -27,6 +27,9 @@ Tags: blue, green, two-columns, fixed-width, custom-menu, full-width-template, m
 .nondisplay {
 	display: none;
 }
+.full-width {
+	width: 100%;
+}
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -218,7 +221,7 @@ hgroup[role="banner"] {
 .image-attachment #content,
 .full-width #content,
 .error404 #content {
-	width: 840px;
+	width: 100%;
 }
 
 /* Alignment */
@@ -534,7 +537,7 @@ img#wpstats,
 /* Secondary Menu floating amongst the clouds */
 #branding .access {
 	display: block;
-	width: 50%;
+	width: 60%;
 	padding: 40px 30px 30px 0;
 }
 #branding .access ul {
@@ -688,11 +691,11 @@ img#wpstats,
 }
 .entry-content,
 .entry-summary {
-	padding: 3em 0 0;
+	/*padding: 3em 0 0;*/
 }
 .single .entry-content,
 .page .entry-content {
-	padding: 1.5em 0 0;
+	/*padding: 1em 0 0;*/
 }
 .entry-content h1,
 .entry-content h2,
@@ -747,6 +750,18 @@ img#wpstats,
 .entry-content tr:hover td,
 .comment-content tr:hover td {
 	background: #ffffdd;
+}
+.entry-content blockquote{
+	border: 1px solid #ccc;
+	-moz-border-radius:8px;
+	-webkit-border-radius:8px;
+	border-radius:8px;
+	padding: 10px;
+	background-color: #fff;
+	color: #595959;
+	padding-left: 40px;
+	background: #fff url("images/testimonials-quote.png");
+	background-repeat: no-repeat;
 }
 .entry-content embed,
 .comment-content embed {

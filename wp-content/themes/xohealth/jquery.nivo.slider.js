@@ -83,7 +83,7 @@
         
         //Set first background
         slider.css('background','url("'+ vars.currentImage.attr('src') +'") no-repeat');
-
+        
         //Create caption
         slider.append(
             $('<div class="nivo-caption"><p></p></div>').css({ display:'none', opacity:settings.captionOpacity })

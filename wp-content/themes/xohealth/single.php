@@ -18,7 +18,7 @@ get_header(); ?>
 
 				<?php beach_content_nav( 'nav-below' ); ?>
 
-				<?php comments_template( '', true ); ?>
+				<?php //comments_template( '', true ); ?>
 
 			<?php endwhile; // end of the loop. ?>
 

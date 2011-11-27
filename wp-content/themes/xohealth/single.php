@@ -7,6 +7,7 @@
 get_header(); ?>
 
 		<div id="primary">
+			<?php get_sidebar(); ?>
 			<div id="content" role="main">
 
 			<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
@@ -22,8 +23,7 @@ get_header(); ?>
 			<?php endwhile; // end of the loop. ?>
 
 			</div><!-- #content -->
-
-			<?php get_sidebar(); ?>
+			<?php include ('sidebar_right.php'); ?>
 		</div><!-- #primary -->
 
 <?php get_footer(); ?>

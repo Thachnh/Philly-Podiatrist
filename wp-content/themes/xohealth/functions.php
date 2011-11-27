@@ -32,7 +32,7 @@ if ( ! isset( $content_width ) )
 $themecolors = array(
 	'bg' => 'F1F6F9',
 	'text' => '333333',
-	'link' => 'EE6633',
+	'link' => 'ffffff',
 	'border' => '296684',
 	'url' => '4499BB',
 );

@@ -40,13 +40,15 @@ get_header(); ?>
 				 	setup_postdata($post);
 				 	?>
 				 	<div class="index-block">
-				 	<?php get_a_post(36); ?>
 				 	<?php the_content(); ?>
 				 	</div>	
 				 	<?php
 				 endforeach;				 
 				 
 				?>
+				<?php get_a_post('welcome'); ?>
+					<div class="entry-title"><?php the_title(); ?></div>
+					<?php the_content(); ?>
 
 			<?php beach_content_nav( 'nav-below' ); ?>
 			</div><!-- .content-wrapper -->

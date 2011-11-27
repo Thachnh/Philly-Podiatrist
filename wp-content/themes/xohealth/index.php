@@ -40,6 +40,7 @@ get_header(); ?>
 				 	setup_postdata($post);
 				 	?>
 				 	<div class="index-block">
+				 	<?php get_a_post(36); ?>
 				 	<?php the_content(); ?>
 				 	</div>	
 				 	<?php

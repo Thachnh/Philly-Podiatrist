@@ -102,7 +102,8 @@ a img {
 	width: 80%;
 	display: block;
 	margin: 0 auto;
-	background: url("images/white-trans-50.png");
+	/*background: url("images/white-trans-50.png");*/
+	background-color:rgba(10,36,53,0.2);
 	-moz-box-shadow: 0 0 17px #555;
 	-webkit-box-shadow: 0 0 17px#555;
 	box-shadow: 0 0 17px #555;
@@ -630,25 +631,23 @@ img#wpstats,
 }
 .hentry,
 .error404 .post {
-	background: #f1f6f9;
 	-moz-border-radius: 3px;
 	border-radius: 3px;
 	display: block;
 	margin: 0 20px 20px;
 	overflow: hidden;
-	padding: 20px;
 }
 .entry-header {
 	display: block;
 	padding: 2em 0 0;
 	position: relative;
+	font-family: "Oswald", arial, helvetica, sans-serif;	
 }
 .single .entry-header,
 .page .entry-header {
 	padding: 0;
 }
 .entry-title {
-	color: #000;
 	font-size: 22px;
 	font-weight: bold;
 }

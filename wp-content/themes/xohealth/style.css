@@ -173,6 +173,14 @@ hgroup[role="banner"] {
 #content .content-wrapper a {
 	color: #000;
 }
+#doctor-info {
+	font-family: "Oswald", arial, helvetica, sans-serif;
+	font-size: 1.2em;
+	line-height: 1.6em;
+}
+#doctor-info p {
+	margin: 0;
+}
 #sidebar, #sidebar-right {
 	width: 24%;
 	margin: 25px 5px 5px 5px;

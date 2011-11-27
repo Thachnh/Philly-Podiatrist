@@ -4,7 +4,7 @@
  * @subpackage Beach
  */
 ?>
-		<div id="sidebar" class="widget-area" role="complementary">
+		<div id="sidebar" class="widget-area left" role="complementary">
 			<div id="accordion" style="display: none">
 				<h1 class="widget-title"><a href="#">Section 1</a></h1>
 				<div>

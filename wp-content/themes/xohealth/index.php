@@ -19,8 +19,9 @@ get_header(); ?>
         </div>
 	</div>
 		<div id="primary">
-			<div id="content" role="main" class="index-content">
-
+			<?php get_sidebar(); ?>
+			<div id="content" role="main">
+			<div class="content-wrapper">
 				<?php beach_content_nav( 'nav-above' ); ?>
 
 				<?php /* Start the Loop  ?>
@@ -47,10 +48,9 @@ get_header(); ?>
 				?>
 
 			<?php beach_content_nav( 'nav-below' ); ?>
-
+			</div><!-- .content-wrapper -->
 			</div><!-- #content -->
-
-			<?php get_sidebar(); ?>
+			<?php include ('sidebar_right.php'); ?>
 		</div><!-- #primary -->
 
 <?php get_footer(); ?>

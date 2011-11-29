@@ -3,8 +3,8 @@
  * @package WordPress
  */
 ?>
-		<div id="sidebar" class="right" role="complementary">
-			<div class="right-sidebar">
+		<div id="right-sidebar" class="right" role="complementary">
+			<div class="sidebar-wrapper">
 				<?php get_a_post('right-sidebar'); ?>
 					<?php the_content(); ?>
 			</div>

@@ -177,28 +177,31 @@ hgroup[role="banner"] {
 	font-family: "Oswald", arial, helvetica, sans-serif;
 	font-size: 1.2em;
 	line-height: 1.6em;
+	padding-bottom: 10px;
 }
 #doctor-info p {
 	margin: 0;
 }
-#sidebar, #sidebar-right {
+#left-sidebar, #right-sidebar {
 	width: 24%;
 	margin: 25px 5px 5px 5px;
+	color: #fff;
+}
+#sidebar, #right-sidebar {
 	/*background-color: #316B93;
 	-moz-border-radius: 5px;
 	border-radius: 5px;*/
 	background-color: #274B65;
 	box-shadow: 0px 0px 8px #000;
-	color: #fff;
 }
-#sidebar .right-sidebar {
+#right-sidebar .sidebar-wrapper {
 	padding: 10px;
 }
-#sidebar .right-sidebar p {
+#right-sidebar .sidebar-wrapper p {
 	padding: 0;
 	margin: 0;
 }
-#sidebar .sidebar-wrapper ul, #sidebar .right-sidebar h1 {
+#sidebar .sidebar-wrapper ul, #right-sidebar .sidebar-wrapper h1 {
 	list-style: none;
 	margin: 0;
 	padding: 10px 0;

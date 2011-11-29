@@ -49,10 +49,6 @@ get_header(); ?>
 				<?php get_a_post('welcome'); ?>
 					<div class="entry-title"><?php the_title(); ?></div>
 					<?php the_content(); ?>
-				<div id="doctor-info">
-					<?php get_a_post('doctor-information'); ?>
-						<?php the_content(); ?>
-				</div>
 			<?php beach_content_nav( 'nav-below' ); ?>
 			</div><!-- .content-wrapper -->
 			</div><!-- #content -->

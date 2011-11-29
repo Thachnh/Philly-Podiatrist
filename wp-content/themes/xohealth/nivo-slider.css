@@ -12,9 +12,9 @@
  
 /* The Nivo Slider styles */
 #wrapper {
-	padding-top: 140px;
+	padding-top: 110px;
 	padding-bottom: 50px;
-	margin: 0 30px;
+	margin: 0 70px 0 120px;
 }
 .theme-default #slider {
     height:306px; /* Make sure your images are the same size */

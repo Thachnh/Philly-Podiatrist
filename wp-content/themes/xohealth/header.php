@@ -70,7 +70,7 @@
 	<header id="branding">
 			<hgroup role="banner" class="left">
 				<span><a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
-				<img src="<?php bloginfo('template_directory') ?>/images/logo.png" width="350px" alt="<?php the_author() ?>" title="<?php the_author() ?>" />
+				<img src="<?php bloginfo('template_directory') ?>/images/logo.png" id="logo" alt="<?php the_author() ?>" title="<?php the_author() ?>" />
 				</a></span>
 			</hgroup>
 

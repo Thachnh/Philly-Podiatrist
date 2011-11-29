@@ -105,8 +105,9 @@ a img {
 	width: 80%;
 	display: block;
 	margin: 0 auto;
-	/*background: url("images/white-trans-50.png");*/
-	background-color:rgba(10,36,53,0.2);
+	background: url("images/header-bg.png");
+	background-size: 100%;
+	/*background-color:rgba(10,36,53,0.2);*/
 	-moz-box-shadow: 0 0 17px #555;
 	-webkit-box-shadow: 0 0 17px#555;
 	box-shadow: 0 0 17px #555;

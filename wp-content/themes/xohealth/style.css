@@ -569,7 +569,7 @@ img#wpstats,
 #branding .access li {
 	position: relative;
 	float: left;
-	border-left: 1px solid #aaa;
+	border-left: 1px solid #555;
 }
 #branding .access li:first-child {
 	border: 0px;
@@ -578,9 +578,9 @@ img#wpstats,
 	color: #fff;
 	display: block;
 	font-family: "helvetica";
-	text-shadow: #222 0px 2px 6px;
+	text-shadow: #222 0px 1px 4px;
 	text-decoration: none;
-	margin: 0 10px 0 10px;
+	margin: 0 6px 0 6px;
 	border-radius: 7px;
 }
 #branding .access .current_page_item a,

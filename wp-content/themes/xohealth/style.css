@@ -110,6 +110,7 @@ a img {
 	width: 80%;
 	display: block;
 	margin: 0 auto;
+	background: url("images/header-bg.jpg");
 	background-repeat: no-repeat;
 	background-color: #365D79;
 	background-size: 100%;

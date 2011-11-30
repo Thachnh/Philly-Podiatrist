@@ -182,7 +182,7 @@ hgroup[role="banner"] {
 	color: #000;
 }
 #doctor-info {
-	font-family: "Oswald", arial, helvetica, sans-serif;
+	font-family: "helvetica";
 	font-size: 1.2em;
 	line-height: 1.6em;
 	padding-bottom: 10px;
@@ -213,7 +213,7 @@ hgroup[role="banner"] {
 	list-style: none;
 	margin: 0;
 	padding: 10px 0;
-	font-family: "Oswald", arial, helvetica, sans-serif;
+	font-family: "helvetica";
 	font-size: 1.1em;
 	text-decoration: none;
 	color: #eee;
@@ -357,7 +357,7 @@ sup {
 sub {
 	top: .5ex;
 }
-input[type="text"],
+input[type="text"], input[type="email"],
 textarea {
 	border: 1px solid #ccc;
 }
@@ -365,7 +365,7 @@ textarea {
 	padding-left: 3px;
 	width: 98%;
 }
-input[type="text"] {
+input[type="text"], input[type="email"] {
 	padding: 3px;
 }
 input[type="submit"] {
@@ -577,7 +577,7 @@ img#wpstats,
 #branding .access a {
 	color: #fff;
 	display: block;
-	font-family: "Oswald", arial, helvetica, sans-serif;
+	font-family: "helvetica";
 	text-shadow: #222 0px 2px 6px;
 	text-decoration: none;
 	margin: 0 10px 0 10px;
@@ -678,7 +678,7 @@ img#wpstats,
 	border-bottom: 1px dashed #ddd;
 	font-size: 30px;
 	margin-bottom: 7px;
-	font-family: "Oswald", arial, helvetica, sans-serif;	
+	font-family: "helvetica";
 }
 .entry-title a {
 	text-decoration: none;

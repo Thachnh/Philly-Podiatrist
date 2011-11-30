@@ -11,10 +11,29 @@
  
  
 /* The Nivo Slider styles */
+
 #wrapper {
 	padding-top: 110px;
 	padding-bottom: 50px;
 	margin: 0 70px 0 120px;
+}
+
+#next-to-slider {
+	background: #EEE;
+	width: 30%;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	height: 100%;
+}
+
+#next-to-slider div{
+	padding:10px;
+}
+
+.slider-wrapper {
+	position: relative;
+	box-shadow: 0px 0px 10px #444;
 }
 .theme-default #slider {
     height:306px; /* Make sure your images are the same size */
@@ -58,18 +77,18 @@
 /* Caption styles */
 .nivo-caption {
 	position:absolute;
-	left:100%;
+	right:0px;
 	top:0px;
 	background:#000;
 	color:#fff;
 	opacity:0.5; /* Overridden by captionOpacity setting */
-	width:43%;
-	height: 100%;
+	width:100%;
 	z-index:8;
-	line-height: 1.5em;
+	text-align:left;
 }
 .nivo-caption p {
-	padding: 10px;
+	padding: 4px 10px;
+	margin:0px;
 }
 .nivo-caption a {
 	display:inline !important;

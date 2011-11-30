@@ -26,6 +26,13 @@ get_header(); ?>
 					event.preventDefault();
 				});
 			</script>
+			<div id="next-to-slider" style="display:none;">
+				<?php get_a_post('doctor-intro'); ?>
+				<?php the_content(); ?>
+			</div>
+			<script type="text/javascript">
+				jQuery("#next-to-slider").appendTo(".slider-wrapper").show();
+			</script>
 			<div id="content-wrapper" class="content-wrapper">
 			<div id="content" role="main">
 

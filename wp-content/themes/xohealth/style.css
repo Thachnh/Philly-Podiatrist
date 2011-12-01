@@ -183,6 +183,7 @@ hgroup[role="banner"] {
 	color: #000;
 }
 #doctor-info {
+	margin-top: 20px;
 	font-family: arial, verdana, helvetica, sans-serif;
 	font-size: 1.2em;
 	line-height: 1.6em;
@@ -214,7 +215,6 @@ hgroup[role="banner"] {
 #sidebar .sidebar-wrapper ul, #right-sidebar .sidebar-wrapper h1 {
 	list-style: none;
 	margin: 0;
-	padding: 10px 0;
 	font-family: arial, verdana, helvetica, sans-serif;
 	font-size: 1.0em;
 	text-decoration: none;
@@ -222,10 +222,10 @@ hgroup[role="banner"] {
 	font-weight: bold;
 }
 #sidebar .sidebar-wrapper ul li {
-	margin: 0 10px;
-	border-bottom: 1px solid #224259;
+	margin: 0 0 0 8px;
 }
 #sidebar .sidebar-wrapper ul a {
+	border-bottom: 1px solid #224259;
 	text-decoration: none;
 	color: #fff;
 	display: block;

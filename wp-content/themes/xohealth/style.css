@@ -772,11 +772,10 @@ img#wpstats,
 .comment-content tr:hover td {
 	background: #ffffdd;
 }
-.entry-content blockquote{
+.entry-content blockquote p{
 	margin-bottom: 0px;
 }
 .entry-content blockquote{
-	border: 1px solid #ccc;
 	-moz-border-radius:8px;
 	-webkit-border-radius:8px;
 	border-radius:8px;
@@ -785,6 +784,9 @@ img#wpstats,
 	padding-left: 40px;
 	background: url("images/black-trans-25.png");
 	background-repeat: repeat;
+    -webkit-box-shadow: 0px 1px 5px 0px #4a4a4a;
+    -moz-box-shadow: 0px 1px 5px 0px #4a4a4a;
+    box-shadow: 0px 1px 5px 0px #4a4a4a;
 }
 .entry-content embed,
 .comment-content embed {

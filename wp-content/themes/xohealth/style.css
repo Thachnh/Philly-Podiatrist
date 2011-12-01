@@ -183,7 +183,7 @@ hgroup[role="banner"] {
 	color: #000;
 }
 #doctor-info {
-	font-family: "helvetica";
+	font-family: arial, verdana, helvetica, sans-serif;
 	font-size: 1.2em;
 	line-height: 1.6em;
 	padding-bottom: 10px;
@@ -214,11 +214,11 @@ hgroup[role="banner"] {
 	list-style: none;
 	margin: 0;
 	padding: 10px 0;
-	font-family: "helvetica";
-	font-size: 1.1em;
+	font-family: arial, verdana, helvetica, sans-serif;
+	font-size: 1.0em;
 	text-decoration: none;
 	color: #eee;
-	font-weight: normal;
+	font-weight: bold;
 }
 #sidebar .sidebar-wrapper ul li {
 	margin: 0 10px;
@@ -490,7 +490,6 @@ img#wpstats,
 	width: 800px;
 }
 #main .access ul {
-	font-size: 15px;
 	list-style: none;
 	margin: 0;
 	padding-left: 0;
@@ -578,11 +577,12 @@ img#wpstats,
 #branding .access a {
 	color: #fff;
 	display: block;
-	font-family: "helvetica";
+	font-family: arial, verdana, helvetica, sans-serif;
 	text-shadow: #222 0px 1px 4px;
 	text-decoration: none;
 	margin: 0 6px 0 6px;
 	border-radius: 7px;
+	font-size: 15px;
 }
 #branding .access .current_page_item a,
 #branding .access .current-menu-item a,
@@ -679,7 +679,7 @@ img#wpstats,
 	border-bottom: 1px dashed #ddd;
 	font-size: 30px;
 	margin-bottom: 7px;
-	font-family: "helvetica";
+	font-family: arial, verdana, helvetica, sans-serif;
 }
 .entry-title a {
 	text-decoration: none;

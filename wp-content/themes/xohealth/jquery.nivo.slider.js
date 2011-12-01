@@ -266,41 +266,7 @@
 			}
         }
 		
-		// Add boxes for box animations
-		var createBoxes = function(slider, settings, vars){
-			var boxWidth = Math.round(slider.width()/settings.boxCols);
-			var boxHeight = Math.round(slider.height()/settings.boxRows);
-			
-			for(var rows = 0; rows < settings.boxRows; rows++){
-				for(var cols = 0; cols < settings.boxCols; cols++){
-					if(cols == settings.boxCols-1){
-						slider.append(
-							$('<div class="nivo-box"></div>').css({ 
-								opacity:0,
-								left:(boxWidth*cols)+'px', 
-								top:(boxHeight*rows)+'px',
-								width:(slider.width()-(boxWidth*cols))+'px',
-								height:boxHeight+'px',
-								background: 'url("'+ vars.currentImage.attr('src') +'") no-repeat -'+ ((boxWidth + (cols * boxWidth)) - boxWidth) +'px -'+ ((boxHeight + (rows * boxHeight)) - boxHeight) +'px'
-							})
-						);
-					} else {
-						slider.append(
-							$('<div class="nivo-box"></div>').css({ 
-								opacity:0,
-								left:(boxWidth*cols)+'px', 
-								top:(boxHeight*rows)+'px',
-								width:boxWidth+'px',
-								height:boxHeight+'px',
-								background: 'url("'+ vars.currentImage.attr('src') +'") no-repeat -'+ ((boxWidth + (cols * boxWidth)) - boxWidth) +'px -'+ ((boxHeight + (rows * boxHeight)) - boxHeight) +'px'
-							})
-						);
-					}
-				}
-			}
-		}
-
-        // Private run method
+		// Private run method
 		var nivoRun = function(slider, kids, settings, nudge){
 			//Get our vars
 			var vars = slider.data('nivo:vars');
@@ -353,12 +319,8 @@
 			// Remove any slices from last transition
 			$('.nivo-slice', slider).remove();
 			
-			// Remove any boxes from last transition
-			$('.nivo-box', slider).remove();
-			
 			if(settings.effect == 'random'){
-				var anims = new Array('sliceDownRight','sliceDownLeft','sliceUpRight','sliceUpLeft','sliceUpDown','sliceUpDownLeft','fold','fade',
-                'boxRandom','boxRain','boxRainReverse','boxRainGrow','boxRainGrowReverse');
+				var anims = new Array('sliceDownRight','sliceDownLeft','sliceUpRight','sliceUpLeft','sliceUpDown','sliceUpDownLeft','fold','fade');
 				vars.randAnim = anims[Math.floor(Math.random()*(anims.length + 1))];
 				if(vars.randAnim == undefined) vars.randAnim = 'fade';
 			}
@@ -518,90 +480,6 @@
                     slider.trigger('nivo:animFinished'); 
                 });
             }
-			else if(settings.effect == 'boxRandom' || vars.randAnim == 'boxRandom'){
-				createBoxes(slider, settings, vars);
-				
-				var totalBoxes = settings.boxCols * settings.boxRows;
-				var i = 0;
-				var timeBuff = 0;
-				
-				var boxes = shuffle($('.nivo-box', slider));
-				boxes.each(function(){
-					var box = $(this);
-					if(i == totalBoxes-1){
-						setTimeout(function(){
-							box.animate({ opacity:'1' }, settings.animSpeed, '', function(){ slider.trigger('nivo:animFinished'); });
-						}, (100 + timeBuff));
-					} else {
-						setTimeout(function(){
-							box.animate({ opacity:'1' }, settings.animSpeed);
-						}, (100 + timeBuff));
-					}
-					timeBuff += 20;
-					i++;
-				});
-			}
-			else if(settings.effect == 'boxRain' || vars.randAnim == 'boxRain' || settings.effect == 'boxRainReverse' || vars.randAnim == 'boxRainReverse' || 
-                    settings.effect == 'boxRainGrow' || vars.randAnim == 'boxRainGrow' || settings.effect == 'boxRainGrowReverse' || vars.randAnim == 'boxRainGrowReverse'){
-				createBoxes(slider, settings, vars);
-				
-				var totalBoxes = settings.boxCols * settings.boxRows;
-				var i = 0;
-				var timeBuff = 0;
-				
-				// Split boxes into 2D array
-				var rowIndex = 0;
-				var colIndex = 0;
-				var box2Darr = new Array();
-				box2Darr[rowIndex] = new Array();
-				var boxes = $('.nivo-box', slider);
-				if(settings.effect == 'boxRainReverse' || vars.randAnim == 'boxRainReverse' ||
-                   settings.effect == 'boxRainGrowReverse' || vars.randAnim == 'boxRainGrowReverse'){
-					boxes = $('.nivo-box', slider)._reverse();
-				}
-				boxes.each(function(){
-					box2Darr[rowIndex][colIndex] = $(this);
-					colIndex++;
-					if(colIndex == settings.boxCols){
-						rowIndex++;
-						colIndex = 0;
-						box2Darr[rowIndex] = new Array();
-					}
-				});
-				
-				// Run animation
-				for(var cols = 0; cols < (settings.boxCols * 2); cols++){
-					var prevCol = cols;
-					for(var rows = 0; rows < settings.boxRows; rows++){
-						if(prevCol >= 0 && prevCol < settings.boxCols){
-							/* Due to some weird JS bug with loop vars 
-							being used in setTimeout, this is wrapped
-							with an anonymous function call */
-							(function(row, col, time, i, totalBoxes) {
-								var box = $(box2Darr[row][col]);
-                                var w = box.width();
-                                var h = box.height();
-                                if(settings.effect == 'boxRainGrow' || vars.randAnim == 'boxRainGrow' ||
-                                   settings.effect == 'boxRainGrowReverse' || vars.randAnim == 'boxRainGrowReverse'){
-                                    box.width(0).height(0);
-                                }
-								if(i == totalBoxes-1){
-									setTimeout(function(){
-										box.animate({ opacity:'1', width:w, height:h }, settings.animSpeed/1.3, '', function(){ slider.trigger('nivo:animFinished'); });
-									}, (100 + time));
-								} else {
-									setTimeout(function(){
-										box.animate({ opacity:'1', width:w, height:h }, settings.animSpeed/1.3);
-									}, (100 + time));
-								}
-							})(rows, prevCol, timeBuff, i, totalBoxes);
-							i++;
-						}
-						prevCol--;
-					}
-					timeBuff += 100;
-				}
-			}
 		}
 		
 		// Shuffle an array
@@ -655,8 +533,6 @@
 	$.fn.nivoSlider.defaults = {
 		effect: 'random',
 		slices: 15,
-		boxCols: 8,
-		boxRows: 4,
 		animSpeed: 500,
 		pauseTime: 3000,
 		startSlide: 0,

@@ -775,13 +775,15 @@ img#wpstats,
 .entry-content blockquote p{
 	margin-bottom: 0px;
 }
+.entry-content blockquote:first-letter{
+	background: url(images/openquoteold.gif);
+}
 .entry-content blockquote{
 	-moz-border-radius:8px;
 	-webkit-border-radius:8px;
 	border-radius:8px;
-	padding: 10px;
+	padding: 10px 40px;
 	color: #DDD;
-	padding-left: 40px;
 	background: url("images/black-trans-25.png");
 	background-repeat: repeat;
     -webkit-box-shadow: 0px 1px 5px 0px #4a4a4a;

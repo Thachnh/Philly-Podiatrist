@@ -116,7 +116,7 @@ a img {
 	margin: 0 auto;
 	background: url("images/bg_6.jpg");
 	background-repeat: no-repeat;
-	background-color: #365D79;
+	background-color: #2F5771;
 	/*background-color:rgba(10,36,53,0.2);*/
 	-moz-box-shadow: 0 0 17px #555;
 	-webkit-box-shadow: 0 0 17px#555;
@@ -189,7 +189,7 @@ hgroup[role="banner"] {
 	font-family: arial, verdana, helvetica, sans-serif;
 	font-size: 1.2em;
 	line-height: 1.6em;
-	padding-bottom: 10px;
+	padding-bottom: 50px;
 }
 #doctor-info p {
 	margin: 0;

@@ -32,6 +32,14 @@
 
 #next-to-slider>div{
 	padding:10px;
+	font-size: 15px;
+	text-align: center;
+	font-weight: bold;
+}
+#next-to-slider p {
+	height: 306px;
+	vertical-align: middle;
+	margin: auto 0;
 }
 
 .slider-wrapper {
@@ -90,6 +98,7 @@
 	width:100%;
 	z-index:8;
 	text-align:left;
+	font-weight: bold;
 }
 .nivo-caption p {
 	padding: 4px 10px;

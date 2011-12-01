@@ -19,13 +19,13 @@
 define('DB_NAME', 'phillypodiatrist-phpfogapp-com');
 
 /** MySQL database username */
-define('DB_USER', 'root');
+define('DB_USER', 'admin-16721');
 
 /** MySQL database password */
 define('DB_PASSWORD', 'p');
 
 /** MySQL hostname */
-define('DB_HOST', 'localhost');
+define('DB_HOST', 'db01-share');
 
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8');

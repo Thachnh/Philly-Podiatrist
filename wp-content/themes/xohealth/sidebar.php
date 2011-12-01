@@ -5,10 +5,6 @@
  */
 ?>
 		<div id="left-sidebar" class="left">
-			<div id="doctor-info">
-				<?php get_a_post('doctor-information'); ?>
-					<?php the_content(); ?>
-			</div>
 			<div id="sidebar" class="widget-area" role="complementary">
 				<div id="accordion" style="display: none">
 					<h1 class="widget-title"><a href="#">Section 1</a></h1>
@@ -38,4 +34,8 @@
 				</div>
 				<?php wp_nav_menu( array( 'container_class' => 'sidebar-wrapper', 'theme_location' => 'secondary' ) ); ?>
 			</div><!-- #secondary .widget-area -->
+			<div id="doctor-info">
+				<?php get_a_post('doctor-information'); ?>
+					<?php the_content(); ?>
+			</div>
 		</div><!-- #left sidebar -->

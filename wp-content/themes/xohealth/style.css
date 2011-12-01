@@ -777,12 +777,16 @@ img#wpstats,
 }
 .entry-content blockquote:first-letter{
 	background: url(images/openquoteold.gif);
+	padding-left:40px;
 }
 .entry-content blockquote{
 	-moz-border-radius:8px;
 	-webkit-border-radius:8px;
 	border-radius:8px;
-	padding: 10px 40px;
+	padding: 10px;
+	padding-left: 40px;
+	margin-bottom: 20px;
+	text-indent: -40px;
 	color: #DDD;
 	background: url("images/black-trans-25.png");
 	background-repeat: repeat;

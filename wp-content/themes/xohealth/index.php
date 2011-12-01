@@ -32,18 +32,21 @@ get_header(); ?>
 				jQuery("ul#menu-sidebar ul.sub-menu").hide();
 			</script>
 			<div id="next-to-slider" style="display:none;">
+			<div>
 				<?php get_a_post('doctor-intro'); ?>
 				<?php the_content(); ?>
+			</div>
 			</div>
 			<script type="text/javascript">
 				jQuery("#next-to-slider").appendTo(".slider-wrapper").show();
 			</script>
 			<div id="content-wrapper" class="content-wrapper">
 			<div id="content" role="main">
-
+			<article class="post type-post hentry">
 				<?php get_a_post('welcome'); ?>
-					<div class="entry-title"><?php the_title(); ?></div>
-					<?php the_content(); ?>
+				<header class="entry-header"><h1 class="entry-title"><?php the_title(); ?></h1></header>
+				<?php the_content(); ?>
+			</article>
 		</div><!-- #content -->
 			</div><!-- .content-wrapper -->
 			<?php include ('sidebar_right.php'); ?>

@@ -15,19 +15,22 @@
 #wrapper {
 	padding-top: 110px;
 	padding-bottom: 50px;
-	margin: 0 70px 0 120px;
+	margin: 0 35px 0 120px;
+	border-radius:4px;
 }
 
 #next-to-slider {
 	background-color: #274B65;
-	width: 30%;
+	width: 35%;
 	position: absolute;
 	top: 0px;
 	right: 0px;
 	height: 100%;
+	color:white;
+	font-style:italic;
 }
 
-#next-to-slider div{
+#next-to-slider>div{
 	padding:10px;
 }
 
@@ -39,7 +42,7 @@
 }
 .theme-default #slider {
     height:306px; /* Make sure your images are the same size */
-    width: 70%;
+    width: 65%;
 }
 .nivoSlider {
 	position:relative;

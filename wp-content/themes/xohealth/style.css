@@ -190,6 +190,7 @@ hgroup[role="banner"] {
 }
 #doctor-info p {
 	margin: 0;
+	font-size: 16px;
 }
 #left-sidebar, #right-sidebar {
 	width: 24%;
@@ -772,16 +773,18 @@ img#wpstats,
 	background: #ffffdd;
 }
 .entry-content blockquote{
+	margin-bottom: 0px;
+}
+.entry-content blockquote{
 	border: 1px solid #ccc;
 	-moz-border-radius:8px;
 	-webkit-border-radius:8px;
 	border-radius:8px;
 	padding: 10px;
-	background-color: #fff;
-	color: #595959;
+	color: #DDD;
 	padding-left: 40px;
-	background: #fff url("images/testimonials-quote.png");
-	background-repeat: no-repeat;
+	background: url("images/black-trans-25.png");
+	background-repeat: repeat;
 }
 .entry-content embed,
 .comment-content embed {

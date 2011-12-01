@@ -22,7 +22,7 @@ define('DB_NAME', 'phillypodiatrist-phpfogapp-com');
 define('DB_USER', 'admin-16721');
 
 /** MySQL database password */
-define('DB_PASSWORD', 'p');
+define('DB_PASSWORD', 'philly!@qw');
 
 /** MySQL hostname */
 define('DB_HOST', 'db01-share');

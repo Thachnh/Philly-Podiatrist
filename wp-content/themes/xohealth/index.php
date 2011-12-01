@@ -30,7 +30,6 @@ get_header(); ?>
 					event.preventDefault();
 				});
 				jQuery("ul#menu-sidebar ul.sub-menu").hide();
-				jQuery().click(function(event) 
 			</script>
 			<div id="next-to-slider" style="display:none;">
 				<?php get_a_post('doctor-intro'); ?>

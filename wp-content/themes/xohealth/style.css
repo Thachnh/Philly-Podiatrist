@@ -108,12 +108,13 @@ a img {
 
 #page {
 	width: 80%;
+	min-width: 800px;
+	max-width: 1024px;
 	display: block;
 	margin: 0 auto;
-	background: url("images/header-bg.jpg");
+	background: url("images/bg_6.jpg");
 	background-repeat: no-repeat;
 	background-color: #365D79;
-	background-size: 100%;
 	/*background-color:rgba(10,36,53,0.2);*/
 	-moz-box-shadow: 0 0 17px #555;
 	-webkit-box-shadow: 0 0 17px#555;

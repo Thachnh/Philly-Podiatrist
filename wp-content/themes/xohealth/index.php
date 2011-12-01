@@ -49,7 +49,6 @@ get_header(); ?>
 			</article>
 		</div><!-- #content -->
 			</div><!-- .content-wrapper -->
-			<?php include ('sidebar_right.php'); ?>
 		</div><!-- #primary -->
 
 <?php get_footer(); ?>

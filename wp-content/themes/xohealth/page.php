@@ -4,7 +4,11 @@
  * @subpackage Beach
  */
 
-get_header(); ?>
+?>
+<script type="text/javascript">
+	jQuery("#page").css("background-image", "url('images/bkg_small.jpg')");
+</script>
+<?php get_header(); ?>
 
 		<div id="primary">
 			<?php get_sidebar(); ?>

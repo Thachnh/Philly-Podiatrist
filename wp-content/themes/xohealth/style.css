@@ -109,7 +109,7 @@ a img {
 ----------------------------------------------- */
 
 #page {
-	width: 80%;
+	width: 1024px;
 	min-width: 800px;
 	max-width: 1024px;
 	display: block;
@@ -173,8 +173,9 @@ hgroup[role="banner"] {
 	//background: url("images/black-trans-25.png");
 }
 #content {
-	float: right;
-	width: 74%;
+	float: left;
+	width: 72.5%;
+	margin: 0px 1%;
 	color: #fff;
 }
 #content .content-wrapper {
@@ -224,6 +225,9 @@ hgroup[role="banner"] {
 }
 #sidebar .sidebar-wrapper ul li {
 	margin: 0 0 0 8px;
+}
+#sidebar .sidebar-wrapper ul li li {
+	font-style: italic;
 }
 #sidebar .sidebar-wrapper ul a {
 	border-bottom: 1px solid #224259;
@@ -559,7 +563,7 @@ img#wpstats,
 #branding .access {
 	display: block;
 	width: 60%;
-	padding: 20px 30px 30px 0;
+	padding: 30px 30px 30px 0;
 }
 #branding .access ul {
 	float: right;
@@ -577,21 +581,25 @@ img#wpstats,
 	border: 0px;
 }
 #branding .access a {
-	color: #fff;
+	color: #0073E6;
 	display: block;
 	font-family: arial, verdana, helvetica, sans-serif;
-	text-shadow: #222 0px 1px 4px;
+	/*text-shadow: #888 0px 1px 4px;*/
 	text-decoration: none;
 	margin: 0 6px 0 6px;
 	border-radius: 7px;
 	font-size: 15px;
+	font-weight: bold;
+}
+#branding .access a:hover {
+	color: #274B65;
 }
 #branding .access .current_page_item a,
 #branding .access .current-menu-item a,
 #branding .access .current-menu-ancestor a {
 	/*background: #6b7574;
 	border-color: #636e6d;*/
-	color: #eee;
+	color: black;
 }
 #branding .access ul ul {
 	display: none;
@@ -622,7 +630,7 @@ img#wpstats,
 #branding .access ul ul :hover > a {
 	/*background: #a9dbe8;
 	border-color: #9dd4e2;*/
-	color: #ccc;
+	color: black;
 }
 #branding .access ul ul a:hover {
 	background: #9dd4e2;
@@ -660,6 +668,7 @@ img#wpstats,
 	-moz-border-radius: 3px;
 	border-radius: 3px;
 	display: block;
+	margin: 0 20px 20px;
 	overflow: hidden;
 }
 .entry-header {

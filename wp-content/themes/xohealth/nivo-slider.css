@@ -38,6 +38,9 @@
 	text-align: center;
 	font-weight: bold;
 }
+#next-to-slider .content p {
+	margin-bottom: 5px;
+}
 #slide-divider {
 	float: left;
 	width: 60px;

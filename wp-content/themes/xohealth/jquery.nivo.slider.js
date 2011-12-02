@@ -534,7 +534,7 @@
 		effect: 'random',
 		slices: 15,
 		animSpeed: 500,
-		pauseTime: 3000,
+		pauseTime: 5000,
 		startSlide: 0,
 		directionNav: true,
 		directionNavHide: true,

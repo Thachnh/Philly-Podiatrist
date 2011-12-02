@@ -48,6 +48,9 @@ fieldset, form, label, legend {
 	padding: 0;
 	vertical-align: baseline;
 }
+h6 {
+	font-size: 12px;
+}
 /* remember to define focus styles! */
 :focus {
 	outline: 0;

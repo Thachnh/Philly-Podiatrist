@@ -173,9 +173,8 @@ hgroup[role="banner"] {
 	//background: url("images/black-trans-25.png");
 }
 #content {
-	float: left;
-	width: 72.5%;
-	margin: 0px 1%;
+	float: right;
+	width: 74%;
 	color: #fff;
 }
 #content .content-wrapper {
@@ -661,7 +660,6 @@ img#wpstats,
 	-moz-border-radius: 3px;
 	border-radius: 3px;
 	display: block;
-	margin: 0 20px 20px;
 	overflow: hidden;
 }
 .entry-header {

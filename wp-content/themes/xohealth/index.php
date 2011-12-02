@@ -29,13 +29,16 @@ get_header(); ?>
 					}
 					event.preventDefault();
 				});
+				
 				jQuery("ul#menu-sidebar ul.sub-menu").hide();
 			</script>
+			
 			<div id="next-to-slider" style="display:none;">
-			<div>
-				<?php get_a_post('doctor-intro'); ?>
-				<?php the_content(); ?>
-			</div>
+				<div id="slide-divider"></div>
+				<div class="content">
+					<?php get_a_post('doctor-intro'); ?>
+					<?php the_content(); ?>
+				</div>
 			</div>
 			<script type="text/javascript">
 				jQuery("#next-to-slider").appendTo(".slider-wrapper").show();

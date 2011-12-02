@@ -30,16 +30,22 @@
 	font-style:italic;
 }
 
-#next-to-slider>div{
+#next-to-slider .content{
 	padding:10px;
+	padding-left: 30px;
 	font-size: 15px;
 	text-align: center;
 	font-weight: bold;
 }
-#next-to-slider p {
+#slide-divider {
+	float: left;
+	width: 60px;
 	height: 306px;
-	vertical-align: middle;
-	margin: auto 0;
+	position: absolute;
+	z-index: 99;
+	margin-left: -30px;
+	background-image: url(images/slide_divider.png);
+	background-repeat: no-repeat;
 }
 
 .slider-wrapper {

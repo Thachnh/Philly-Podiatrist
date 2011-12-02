@@ -111,6 +111,19 @@ a img {
 /* =Structure
 ----------------------------------------------- */
 
+.video-link {
+	width: 300px;
+	height: 68px;
+	background-image: url("images/video_link_bkg.jpg");
+}
+.video-link a {
+	line-height: 75px;
+	padding-left: 50px;
+	color: white;
+}
+.video-link a:link,.video-link a:hover, .video-link a:visited {
+	color: white;
+}
 #page {
 	width: 1024px;
 	min-width: 800px;

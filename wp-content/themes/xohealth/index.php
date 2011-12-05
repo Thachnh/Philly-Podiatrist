@@ -49,6 +49,16 @@ get_header(); ?>
 				<?php get_a_post('welcome'); ?>
 				<header class="entry-header"><h1 class="entry-title"><?php the_title(); ?></h1></header>
 				<?php the_content(); ?>
+			<script type="text/javascript">
+
+			jQuery("#concerns li").each( function(){ 
+				jQuery(this).next("summary").hide();
+				jQuery(this).append(jQuery("<img class='arrowdown'/>").css({'margin':'2px', 'vertical-align':'text-bottom'}).attr("src","<?php bloginfo('template_directory') ?>/images/icon_arrowdown_gray.gif"));
+				jQuery(this).append(jQuery("<img class='arrowup'/>").css({'margin':'2px', 'vertical-align':'text-bottom','display':'none'}).attr("src","<?php bloginfo('template_directory') ?>/images/icon_arrowup_gray.gif"));
+				jQuery(this).wrapInner("<a href='#'/>");
+				jQuery(this).click(function(event){event.preventDefault();jQuery(this).next("summary").toggle();jQuery(this).find('img.arrowdown').toggle();jQuery(this).find('img.arrowup').toggle();});
+			});
+			</script>
 			</article>
 		</div><!-- #content -->
 			</div><!-- .content-wrapper -->

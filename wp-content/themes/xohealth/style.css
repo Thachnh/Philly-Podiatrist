@@ -666,6 +666,12 @@ img#wpstats,
 /* =Content
 ----------------------------------------------- */
 
+#concerns summary {
+	padding: 4px;
+	background-color: #3F6781;
+	border: 1px solid #AAA;
+}
+
 #main {
 	
 }

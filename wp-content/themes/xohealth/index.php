@@ -49,6 +49,9 @@ get_header(); ?>
 				<?php get_a_post('welcome'); ?>
 				<header class="entry-header"><h1 class="entry-title"><?php the_title(); ?></h1></header>
 				<?php the_content(); ?>
+			</article>
+		</div><!-- #content -->
+			</div><!-- .content-wrapper -->
 			<script type="text/javascript">
 
 			jQuery("#concerns li").each( function(){ 
@@ -58,10 +61,11 @@ get_header(); ?>
 				jQuery(this).wrapInner("<a href='#'/>");
 				jQuery(this).click(function(event){event.preventDefault();jQuery(this).next("summary").toggle();jQuery(this).find('img.arrowdown').toggle();jQuery(this).find('img.arrowup').toggle();});
 			});
+			jQuery("div.page-link a").live("click",function(event) {
+				jQuery("#content-wrapper").load(jQuery(this).attr("href")+" #content");
+				event.preventDefault();
+			});
 			</script>
-			</article>
-		</div><!-- #content -->
-			</div><!-- .content-wrapper -->
 		</div><!-- #primary -->
 
 <?php get_footer(); ?>

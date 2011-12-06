@@ -199,7 +199,7 @@ hgroup[role="banner"] {
 	float: left;
 	width: 68.5%;
 	margin: 0px 1%;
-	color: #fff;
+	color: #111;
 }
 #content .content-wrapper {
 	padding: 10px;
@@ -221,7 +221,7 @@ hgroup[role="banner"] {
 #left-sidebar {
 	width: 28%;
 	margin: 25px 5px 5px 5px;
-	color: #fff;
+	color: #111;
 }
 #sidebar, #right-sidebar {
 	/*background-color: #316B93;

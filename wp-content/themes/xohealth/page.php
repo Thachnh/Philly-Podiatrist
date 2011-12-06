@@ -24,6 +24,7 @@
                                 
                                 jQuery("ul#menu-sidebar ul.sub-menu").hide();
                         </script>
+            <div id="content-wrapper">
 			<div id="content" role="main">
 				<?php while ( have_posts() ) : the_post(); ?>
 
@@ -34,6 +35,7 @@
 				<?php endwhile; // end of the loop. ?>
 
 			</div><!-- #content -->
+			</div>
 		</div><!-- #primary -->
 
 <?php get_footer(); ?>

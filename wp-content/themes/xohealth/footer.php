@@ -10,7 +10,7 @@
 	<footer id="colophon" role="contentinfo">
 			<div id="site-generator">
 				<p>
-					<span class="right">©1999-2011 PhiladelphiaPodiatrist.com <a href="https://mail.google.com/mail?view=cm&amp;tf=0&amp;to=info@xohealth.com" target="_blank">info@philadelphiapodiatrist.com</a></span>
+					<span class="right">©1999-2011 PhiladelphiaPodiatrist.com <a href="https://mail.google.com/mail?view=cm&amp;tf=0&amp;to=info@philadelphiapodiatrist.com" target="_blank">info@philadelphiapodiatrist.com</a></span>
 				</p>
 			</div>
 	</footer><!-- #colophon -->

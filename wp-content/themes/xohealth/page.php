@@ -8,7 +8,7 @@
 <?php get_header(); ?>
 
 <script type="text/javascript">
-	jQuery("#page").css("background-image", "url('images/bkg_small.jpg')");
+	jQuery("#page").removeClass('page-big-bkg').addClass("page-small-bkg");
 </script>
 		<div id="primary">
 			<?php get_sidebar(); ?>

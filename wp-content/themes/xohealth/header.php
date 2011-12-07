@@ -45,6 +45,7 @@
   <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
   <script src="<?php echo get_template_directory_uri(); ?>/jquery.nivo.slider.js" type="text/javascript"></script>
   <script src="<?php echo get_template_directory_uri(); ?>/jquery.fullscreenr.js" type="text/javascript"></script>
+  <script src="<?php echo get_template_directory_uri(); ?>/menus.js" type="text/javascript"></script>
   
 	<script type="text/javascript">  
 		var FullscreenrOptions = { width: 2605, height: 1642, bgID: '#bgimg' };

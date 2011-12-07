@@ -237,20 +237,24 @@ hgroup[role="banner"] {
 	padding: 0;
 	margin: 0;
 }
-#sidebar .sidebar-wrapper li, #right-sidebar .sidebar-wrapper h1 {
+#sidebar .sidebar-wrapper ul, #right-sidebar .sidebar-wrapper h1 {
 	list-style: none;
 	margin: 0;
 	font-family: arial, verdana, helvetica, sans-serif;
-	font-size: 0.9em;
 	text-decoration: none;
 	color: #eee;
 	font-weight: bold;
 	padding: 5px;
 }
 #sidebar .sidebar-wrapper ul li {
-	
+	font-size: 0.9em;
 }
-#sidebar .sidebar-wrapper ul li li {
+#left-sidebar ul.submenu {
+	padding-left: 15px;
+	padding-right: 0px;	
+}
+#
+#sidebar .sidebar-wrapper ul.sub-menu li {
 	font-style: italic;
 }
 #sidebar .sidebar-wrapper ul a {

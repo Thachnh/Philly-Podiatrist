@@ -114,7 +114,7 @@ a img {
 .video-link {
 	width: 300px;
 	height: 68px;
-	background-image: url("images/film_reel.png");
+	background-image: url("images/grey_film_reel.png");
 }
 .video-link a {
 	line-height: 72px;
@@ -124,7 +124,7 @@ a img {
 	color: white;
 }
 .video-link a:link,.video-link a:hover, .video-link a:visited {
-	color: #2F5771;
+	color: white;
 }
 #page {
 	width: 1024px;
@@ -140,10 +140,10 @@ a img {
 	box-shadow: 0 0 17px #555;
 }
 .page-big-bkg {
-	background: url("images/bkg_81.jpg");
+	background: url("images/site bg_9 top.jpg");
 }
 .page-small-bkg {
-	background: url("images/bkg_8_small1.jpg");
+	background: url("images/site bg_9 bottom.jpg");
 }
 
 #content.subpages {
@@ -237,11 +237,11 @@ hgroup[role="banner"] {
 	padding: 0;
 	margin: 0;
 }
-#sidebar .sidebar-wrapper ul, #right-sidebar .sidebar-wrapper h1 {
+#sidebar .sidebar-wrapper li, #right-sidebar .sidebar-wrapper h1 {
 	list-style: none;
 	margin: 0;
 	font-family: arial, verdana, helvetica, sans-serif;
-	font-size: 1.05em;
+	font-size: 0.9em;
 	text-decoration: none;
 	color: #eee;
 	font-weight: bold;

@@ -138,11 +138,11 @@ a img {
 	box-shadow: 0 0 17px #555;
 }
 .page-big-bkg {
-	background: url("images/site bg_9 top.jpg");
+	background: url("images/site bg_9 bottom.jpg");
 	background-color: #2f5771;
 }
 .page-small-bkg {
-	background: url("images/site bg_9 bottom.jpg");
+	background: url("images/site bg_9 top.jpg");
 	background-color: #2f5771;
 }
 

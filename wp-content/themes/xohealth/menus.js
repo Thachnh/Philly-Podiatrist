@@ -6,8 +6,8 @@ jQuery(document).ready( function() {
 			jQuery(this).siblings("ul.sub-menu").slideDown();
 		}
 		event.preventDefault();
-		jQuery("ul#menu-sidebar li>a").css("background-position", "0 0");
-		jQuery(this).css("background-position", "0 -38px");
+		jQuery("ul#menu-sidebar li>a").removeClass("selected");
+		jQuery(this).addClass("selected");
 	});
 	
 	jQuery("ul#menu-sidebar ul.sub-menu").hide();	

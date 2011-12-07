@@ -237,7 +237,7 @@ hgroup[role="banner"] {
 	padding: 0;
 	margin: 0;
 }
-#sidebar .sidebar-wrapper ul, #right-sidebar .sidebar-wrapper h1 {
+#sidebar ul {
 	list-style: none;
 	margin: 0;
 	font-family: arial, verdana, helvetica, sans-serif;
@@ -246,14 +246,12 @@ hgroup[role="banner"] {
 	font-weight: bold;
 	padding: 5px;
 }
-#sidebar .sidebar-wrapper ul li {
-	font-size: 0.9em;
+#sidebar li.menu-item {
+	font-size: 1.0em;
 }
-#left-sidebar ul.submenu {
-	padding-left: 15px;
-	padding-right: 0px;	
+#sidebar ul.submenu {
+	padding: 0px 0px 0px 15px;
 }
-#
 #sidebar .sidebar-wrapper ul.sub-menu li {
 	font-style: italic;
 }
@@ -269,7 +267,7 @@ hgroup[role="banner"] {
 	border-radius: 5px;
 	background: url(images/btn-bkg.gif) repeat-x 0 0;
 }
-#sidebar .sidebar-wrapper ul a:hover {
+.selected, #sidebar .sidebar-wrapper ul a:hover {
 	/*background-color: #224259;*/
 	background-position: 0 -38px;
 }

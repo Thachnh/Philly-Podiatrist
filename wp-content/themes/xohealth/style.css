@@ -138,13 +138,12 @@ a img {
 	box-shadow: 0 0 17px #555;
 }
 .page-home-bkg {
-	background: url("images/site bg_9 top.jpg");
+	background: url("images/bg_home.jpg");
 	background-color: #2f5771;
 }
 .page-bkg {
-	background: url("images/site bg_9 bottom.jpg");
-	background-color: #7ab1d8;
-	background-position: left bottom;
+	background: url("images/bg_page.jpg");
+	background-color: #2f5771;
 }
 
 #content.subpages {

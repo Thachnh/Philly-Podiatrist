@@ -42,7 +42,6 @@
 <script src="<?php echo get_template_directory_uri(); ?>/html5.js" type="text/javascript"></script>
 <![endif]-->
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6/jquery.min.js"></script>
-  <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
   <script src="<?php echo get_template_directory_uri(); ?>/jquery.nivo.slider.js" type="text/javascript"></script>
   <script src="<?php echo get_template_directory_uri(); ?>/jquery.fullscreenr.js" type="text/javascript"></script>
   <script src="<?php echo get_template_directory_uri(); ?>/menus.js" type="text/javascript"></script>
@@ -54,9 +53,6 @@
 <?php wp_head(); ?>
 	<script>
 	
-	  $(document).ready(function() {
-		    $("#accordion").accordion();
-		  });
 	  $(window).load(function() {
 	        $('#slider').nivoSlider();
 	    });
@@ -66,7 +62,7 @@
 <body>
 <!-- <img id="bgimg" src="<?php echo get_template_directory_uri(); ?>/images/bkg1.jpg" /> -->
 <div id="realBody" <?php body_class(); ?>>
-<div id="page" class="hfeed page-big-bkg">
+<div id="page" class="hfeed <?php if (is_home()): ?>page-home-bkg<?php else: ?>page-bkg"<?php endif; ?>">
 	<header id="branding">
 			<hgroup role="banner" class="left">
 				<span><a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">

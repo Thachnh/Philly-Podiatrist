@@ -8,7 +8,6 @@
  */
 
 get_header(); ?>
-
 		<div id="primary">
 			<div class="full-width">
 			<div id="content" role="main">

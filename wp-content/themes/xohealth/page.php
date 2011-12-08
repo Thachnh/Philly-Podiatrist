@@ -6,14 +6,8 @@
 
 ?>
 <?php get_header(); ?>
-
-<script type="text/javascript">
-	jQuery("#page").removeClass('page-big-bkg').addClass("page-small-bkg");
-</script>
 		<div id="primary">
 			<?php get_sidebar(); ?>
-                        <script type="text/javascript">
-                        </script>
             <div id="content-wrapper">
 			<div id="content" role="main">
 				<?php while ( have_posts() ) : the_post(); ?>

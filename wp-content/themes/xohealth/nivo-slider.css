@@ -32,10 +32,10 @@
 }
 
 #next-to-slider .content{
-	padding:10px;
-	padding-left: 30px;
+	padding: 35px 10px;
+	padding-left: 35px;
 	font-size: 15px;
-	text-align: center;
+	text-align: left;
 	font-weight: bold;
 }
 #next-to-slider .content p {
@@ -44,7 +44,7 @@
 #slide-divider {
 	float: left;
 	width: 60px;
-	height: 270px;
+	height: 306px;
 	position: absolute;
 	z-index: 99;
 	margin-left: -30px;

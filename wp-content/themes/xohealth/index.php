@@ -9,12 +9,13 @@ get_header(); ?>
 	<div id="wrapper">
 	<div class="slider-wrapper theme-default">
             <div id="slider" class="nivoSlider">
-                <img src="<?php bloginfo('template_directory') ?>/images/slide-1.jpg" class="image" alt="" title="The Center for Enhanced Podiatric Function and Pain Management"/>
-                <img src="<?php bloginfo('template_directory') ?>/images/slide-2.jpg" class="image" alt="" title="My goal is to determine & treat the CAUSE of your pain" /></a>
-                <img src="<?php bloginfo('template_directory') ?>/images/slide-3.jpg" class="image" title="Patients of all ages welcomed" />
-                <img src="<?php bloginfo('template_directory') ?>/images/slide-4.jpg" class="image" alt="" title="We treat “the cause of your condition”" />
-                <img src="<?php bloginfo('template_directory') ?>/images/slide-5.jpg" class="image" alt="" title="Non-surgical treatment techniques emphasized" />
-                <img src="<?php bloginfo('template_directory') ?>/images/slide-6.jpg" class="image" alt="" title="Specialize in sports injuries and work-related accidents" />
+                <img src="<?php bloginfo('template_directory') ?>/images/slide-1.jpg" class="image" alt="" title='We specialize in "hard to heal" conditions'/>
+                <img src="<?php bloginfo('template_directory') ?>/images/slide-2.jpg" class="image" alt="" title="Patients of all ages welcomed" /></a>
+                <img src="<?php bloginfo('template_directory') ?>/images/slide-3.jpg" class="image" alt="" title="Non-surgical techniques emphasized" />
+                <img src="<?php bloginfo('template_directory') ?>/images/slide-4.jpg" class="image" alt="" title="Podiatric Acupuncture and Pain Management" />
+                <img src="<?php bloginfo('template_directory') ?>/images/slide-5.jpg" class="image" alt="" title="Sports and Dance Injuries " />
+                <img src="<?php bloginfo('template_directory') ?>/images/slide-6.jpg" class="image" alt="" title="Work Related Injuries" />
+                <img src="<?php bloginfo('template_directory') ?>/images/slide-7.jpg" class="image" alt="" title="Balance and Fall Prevention Programs" />
             </div>
         </div>
 	</div>

@@ -1,12 +1,14 @@
 .content-col-main {
    float:left;
-   width:67%;
+   width:65%;
+   padding: 4px;
 }
 
 .content-col-side {
    float:right;
    width:31%;
    margin-right: 5px;
+   padding: 4px;
 }
 
 img { /* Makes sure your images stay within their columns */

@@ -123,7 +123,7 @@ a img {
 	font-weight: bold;
 }
 .video-link a:link,.video-link a:hover, .video-link a:visited {
-	color: #0073E6;
+	color: #0f3751;
 }
 #page {
 	width: 1024px;
@@ -143,7 +143,8 @@ a img {
 }
 .page-bkg {
 	background: url("images/site bg_9 bottom.jpg");
-	background-color: #2f5771;
+	background-color: #7ab1d8;
+	background-position: left bottom;
 }
 
 #content.subpages {
@@ -199,7 +200,10 @@ hgroup[role="banner"] {
 	float: left;
 	width: 68.5%;
 	margin: 0px 1%;
-	color: #111;
+	color: #000;
+}
+.page-home-bkg #content {
+	color: #fff;
 }
 #content .content-wrapper {
 	padding: 10px;
@@ -436,15 +440,15 @@ input[type="submit"]:active {
 
 /* Links */
 a {
-	color: #111;
+	color: inherit;
 }
 a:visited {
-	color: #333;
+	color: inherit;
 }
 a:focus,
 a:active,
 a:hover {
-	color: #4499bb;
+	color: inherit;
 }
 
 /* Text meant only for machines */

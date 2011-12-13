@@ -127,8 +127,6 @@ a img {
 }
 #page {
 	width: 1024px;
-	min-width: 800px;
-	max-width: 1024px;
 	display: block;
 	margin: 0 auto;
 	background-repeat: no-repeat;
@@ -138,12 +136,14 @@ a img {
 	box-shadow: 0 0 17px #555;
 }
 .page-home-bkg {
-	background: url("images/bg_home.jpg");
+	background: url("images/bkg_home.jpg");
 	background-color: #2f5771;
 }
 .page-bkg {
-	background: url("images/bg_page.jpg");
-	background-color: #2f5771;
+	background: url("images/bkg_page.jpg");
+	background-repeat:no-repeat;
+	background-position: bottom;
+	background-color: #6EA4CA;
 }
 
 #content.subpages {
@@ -197,8 +197,8 @@ hgroup[role="banner"] {
 }
 #content {
 	float: left;
-	width: 68.5%;
-	margin: 0px 1%;
+	width: 74%;
+	margin: 0px 0 0 20px;
 	color: #000;
 }
 .page-home-bkg #content {
@@ -221,17 +221,24 @@ hgroup[role="banner"] {
 	margin: 0;
 	font-size: 13px;
 }
+#doctor-info h4 {
+	color: white;
+}
 #left-sidebar {
-	width: 28%;
+	width: 23%;
 	margin: 25px 5px 5px 5px;
 	color: #111;
 }
-#sidebar, #right-sidebar {
+#sidebar, .content-col-side img {
 	/*background-color: #316B93;
 	-moz-border-radius: 5px;
 	border-radius: 5px;*/
 	background-color: #274B65;
 	box-shadow: 0px 0px 8px #000;
+}
+.content-col-side img {
+	margin-bottom: 10px;
+	padding: 5px;
 }
 #right-sidebar .sidebar-wrapper {
 	padding: 10px;
@@ -720,7 +727,6 @@ img#wpstats,
 	-moz-border-radius: 3px;
 	border-radius: 3px;
 	display: block;
-	margin: 0 20px 20px;
 	overflow: hidden;
 }
 .entry-header {

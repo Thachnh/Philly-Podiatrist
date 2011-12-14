@@ -637,7 +637,7 @@ img#wpstats,
 	border: 0px;
 }
 #branding .access a {
-	color: #0073E6;
+	color: white;
 	display: block;
 	font-family: arial, verdana, helvetica, sans-serif;
 	/*text-shadow: #888 0px 1px 4px;*/
@@ -1077,7 +1077,7 @@ img.wp-smiley {
 }
 p img,
 .wp-caption {
-	margin-bottom: 1.5em;
+	/*margin-bottom: 1.5em;*/
 }
 .wp-caption {
 	text-align: center;

@@ -240,6 +240,12 @@ hgroup[role="banner"] {
 	margin-top: 25px;
 	border: 1px solid #274B65;
 }
+.content-col-side .noncss {
+	/*background-color: #274B65;*/
+	box-shadow: none;
+	margin-top: 0;
+	border: 0px;
+}
 #right-sidebar .sidebar-wrapper {
 	padding: 10px;
 }

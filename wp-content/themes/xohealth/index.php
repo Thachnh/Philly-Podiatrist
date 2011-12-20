@@ -45,7 +45,7 @@ get_header(); ?>
 		</div><!-- #content -->
 			</div><!-- .content-wrapper -->
 			<script type="text/javascript">
-
+			/*
 			jQuery("#concerns li").each( function(){ 
 				jQuery(this).next("summary").hide();
 				jQuery(this).append(jQuery("<img class='arrowdown'/>").css({'margin':'2px', 'vertical-align':'text-bottom'}).attr("src","<?php bloginfo('template_directory') ?>/images/icon_arrowdown_gray.gif"));
@@ -53,6 +53,7 @@ get_header(); ?>
 				jQuery(this).wrapInner("<a href='#'/>");
 				jQuery(this).click(function(event){event.preventDefault();jQuery(this).next("summary").toggle();jQuery(this).find('img.arrowdown').toggle();jQuery(this).find('img.arrowup').toggle();});
 			});
+			*/
 			jQuery("div.page-link a").live("click",function(event) {
 				jQuery("#content-wrapper").load(jQuery(this).attr("href")+" #content");
 				event.preventDefault();

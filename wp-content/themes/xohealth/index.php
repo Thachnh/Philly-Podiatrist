@@ -37,7 +37,7 @@ get_header(); ?>
 			</script>
 			<div id="content-wrapper" class="content-wrapper">
 			<div id="content" role="main">
-			<article class="post type-post hentry" style="font-size: 14px">
+			<article class="post type-post hentry">
 				<?php get_a_post('welcome'); ?>
 				<header class="entry-header"><h1 class="entry-title"><?php the_title(); ?></h1></header>
 				<?php the_content(); ?>

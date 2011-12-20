@@ -59,9 +59,6 @@ h6 {
 	position:absolute;
 	z-index: -1;
 }
-div{
-	font-size:13px;
-}
 body {
 	overflow:hidden; 		/* needed to eliminate scrollbars caused by the background image */
 	padding:0;margin:0;		/* necesarry for the raster to fill the screen */
@@ -240,7 +237,7 @@ hgroup[role="banner"] {
 .content-col-side img {
 	/*background-color: #274B65;*/
 	box-shadow: -10px -10px 8px #132839;
-	margin-bottom: 25px;
+	margin-top: 25px;
 	border: 1px solid #274B65;
 }
 #right-sidebar .sidebar-wrapper {
@@ -327,7 +324,7 @@ hgroup[role="banner"] {
 body, input, textarea {
 	color: #333;
 	/*font: 12px "Fertigo Pro", "fertigo-pro-1", "fertigo-pro-2", Georgia, "Bitstream Charter", serif;*/
-	font: 0.87em arial,verdana,helvetica,sans-serif;
+	font: 13px verdana,helvetica,sans-serif;
 	line-height: 1.5;
 }
 
@@ -639,12 +636,11 @@ img#wpstats,
 #branding .access a {
 	color: white;
 	display: block;
-	font-family: arial, verdana, helvetica, sans-serif;
 	/*text-shadow: #888 0px 1px 4px;*/
 	text-decoration: none;
 	margin: 0 6px 0 6px;
 	border-radius: 7px;
-	font-size: 15px;
+	font-size: 13px;
 	font-weight: bold;
 }
 #branding .access a:hover {

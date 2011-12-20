@@ -11,11 +11,12 @@ get_header(); ?>
             <div id="slider" class="nivoSlider">
                 <img src="<?php bloginfo('template_directory') ?>/images/slide-1.jpg" class="image" alt="" title='We specialize in "hard to heal" conditions'/>
                 <img src="<?php bloginfo('template_directory') ?>/images/slide-2.jpg" class="image" alt="" title="Patients of all ages welcomed" /></a>
-                <img src="<?php bloginfo('template_directory') ?>/images/slide-3.jpg" class="image" alt="" title="Non-surgical techniques emphasized" />
+                <img src="<?php bloginfo('template_directory') ?>/images/slide-3.jpg" class="image" alt="" title="Dr. Diamond has once again kept me dancing and on the stage - Paul, Lion King Dancer" />
                 <img src="<?php bloginfo('template_directory') ?>/images/slide-4.jpg" class="image" alt="" title="Podiatric Acupuncture and Pain Management" />
                 <img src="<?php bloginfo('template_directory') ?>/images/slide-5.jpg" class="image" alt="" title="Sports and Dance Injuries " />
                 <img src="<?php bloginfo('template_directory') ?>/images/slide-6.jpg" class="image" alt="" title="Work Related Injuries" />
                 <img src="<?php bloginfo('template_directory') ?>/images/slide-7.jpg" class="image" alt="" title="Balance and Fall Prevention Programs" />
+                <img src="<?php bloginfo('template_directory') ?>/images/slide-8.jpg" class="image" alt="" title="I was able to climb the Great Wall of China recently without a whimper" />
             </div>
         </div>
 	</div>
@@ -36,7 +37,7 @@ get_header(); ?>
 			</script>
 			<div id="content-wrapper" class="content-wrapper">
 			<div id="content" role="main">
-			<article class="post type-post hentry">
+			<article class="post type-post hentry" style="font-size: 14px">
 				<?php get_a_post('welcome'); ?>
 				<header class="entry-header"><h1 class="entry-title"><?php the_title(); ?></h1></header>
 				<?php the_content(); ?>

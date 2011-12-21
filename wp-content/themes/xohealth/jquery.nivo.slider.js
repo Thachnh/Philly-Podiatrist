@@ -531,7 +531,7 @@
 	
 	//Default settings
 	$.fn.nivoSlider.defaults = {
-		effect: 'random',
+		effect: 'fade',
 		slices: 15,
 		animSpeed: 500,
 		pauseTime: 5000,
@@ -546,7 +546,7 @@
 		keyboardNav: true,
 		pauseOnHover: true,
 		manualAdvance: false,
-		captionOpacity: 0.5,
+		captionOpacity: 1.0,
 		prevText: 'Prev',
 		nextText: 'Next',
 		beforeChange: function(){},
